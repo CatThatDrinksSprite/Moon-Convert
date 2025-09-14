@@ -1,4 +1,5 @@
 loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Main/scriptcmds.lua", true))()
+loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
 local userinputService = game:GetService("UserInputService")
 
 local Converted = {
@@ -84,3 +85,4 @@ userinputService.InputBegan:Connect(function(input, gameprocessedEvent)
 		end
 	end
 end)
+sendNotification("Moon Convert", "Loaded!", 7)
