@@ -16,7 +16,7 @@ Converted["_Moon Convert"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
 Converted["_Moon Convert"].ResetOnSpawn = false
 Converted["_Moon Convert"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Converted["_Moon Convert"].Name = "Moon Convert"
-Converted["_Moon Convert"].Parent = game:GetService("Players").LocalPlayer.PlayerGui
+Converted["_Moon Convert"].Parent = game:GetService("CoreGui")
 
 Converted["_MainBar"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
 Converted["_MainBar"].BackgroundTransparency = 0.10000000149011612
