@@ -1,3 +1,4 @@
+local Count = 1
 function AlignCharacter(Part0,Part1,Position,Angle)
     local AlignPos = Instance.new('AlignPosition', Part1); AlignPos.Name = "AliP_"..Count
     AlignPos.ApplyAtCenterOfMass = true;
