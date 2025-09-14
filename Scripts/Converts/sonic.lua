@@ -48,7 +48,6 @@ stance = false
 local ff = 2
 noleg = false
 evadecooldown = false
-Humanoid.Animator.Parent = nil
 equip = false
 local Effects = {}
  attackspeed = 0.14 
@@ -190,23 +189,18 @@ print("Space near a wall to walljump, away from a wall homing attack")
 		    ArtificialHB = Instance.new("BindableEvent", script)
 		ArtificialHB.Name = "Heartbeat"
 		 
-		script:WaitForChild("Heartbeat")
-		 
 		frame = 1 / 80
 		tf = 0
 		allowframeloss = false
 		tossremainder = false
 		lastframe = tick()
-		script.Heartbeat:Fire()
 		game:GetService("RunService").Heartbeat:connect(function(s, p)
 		    tf = tf + s
 		    if tf >= frame then
 		        if allowframeloss then
-		            script.Heartbeat:Fire()
 		            lastframe = tick()
 		        else
 		            for i = 1, math.floor(tf / frame) do
-		                script.Heartbeat:Fire()
 		            end
 		            lastframe = tick()
 		        end
@@ -1520,7 +1514,6 @@ local llegpart, llegendPoint = workspace:FindPartOnRay(llegray, Character)
     
     end
 
-Head.Running.Pitch = 0.76 + Humanoid.WalkSpeed/124
 if torvel<1  and Swing == 2 then
     boost = false
 elseif torvel>1   and Swing == 2 then
