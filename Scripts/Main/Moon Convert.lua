@@ -85,4 +85,4 @@ userinputService.InputBegan:Connect(function(input, gameprocessedEvent)
 		end
 	end
 end)
-sendNotification("Moon Convert", "Loaded!", 7)
+sendNotification("Moon Convert", "Loaded! Click Right Alt to Open the Command Bar.", 7)
