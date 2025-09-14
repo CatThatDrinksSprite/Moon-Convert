@@ -6,7 +6,7 @@ scriptcmds = {
     loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Reanimation/MyWorld.lua", true))()
   end,
   ["reload"] = function()
-    sendNotification("Moon Convert", "Rerunning!", 7)
+    sendNotification("Moon Convert", "Reloading!", 7)
     loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Main/Moon%20Convert.lua", true))()
   end,
   ["sonic"] = function()
