@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/blob/main/Scripts/Other/LoadLibrary.lua", true))()
+loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Other/LoadLibrary.lua", true))()
 
 -----------------------
 --[[ Name : Chips ]]--
