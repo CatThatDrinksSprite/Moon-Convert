@@ -1,8 +1,10 @@
 # MOON CONVERT | Commands
 > reanimate
 
-> sonic
+> reload
 
-> chips
+> sonic (Requires Reanimate)
 
-> shopping cart
+> chips (Requires Reanimate) (Hat Recommended)
+
+> shopping cart (Requires Reanimate) (Hat Recommended)
