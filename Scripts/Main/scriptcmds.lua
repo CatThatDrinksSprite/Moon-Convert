@@ -8,9 +8,15 @@ scriptcmds = {
   ["sonic"] = function()
     sendNotification("Moon Convert", "Running!", 7)
     loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Converts/sonic.lua", true))()
+    if not game.Players.LocalPlayer.Character:FindFirstChild("Model") then
+      sendNotification("Moon Convert", "This script will be clientsided unless u run the reanimate command.", 7)
+    end
   end,
   ["chips"] = function()
     sendNotification("Moon Convert", "Running!", 7)
     loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Converts/chips.lua", true))()
+    if not game.Players.LocalPlayer.Character:FindFirstChild("Model") then
+      sendNotification("Moon Convert", "This script will be clientsided unless u run the reanimate command.", 7)
+    end
   end,
 }
