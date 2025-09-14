@@ -7,6 +7,7 @@ scriptcmds = {
   end,
   ["reload"] = function()
     sendNotification("Moon Convert", "Reloading!", 7)
+    game:GetService("CoreGui")["Moon Convert"]:Destroy()
     loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Main/Moon%20Convert.lua", true))()
   end,
   ["sonic"] = function()
