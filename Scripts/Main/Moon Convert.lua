@@ -53,16 +53,16 @@ Converted["_UIStroke"].Thickness = 4
 Converted["_UIStroke"].Parent = Converted["_MainBar"]
 
 Converted["_MainText"].FocusLost:Connect(function(enterPressed)
-	if enterPressed then
-		if scriptcmds[Converted["_MainText"].Text] then
-			scriptcmds[Converted["_MainText"].Text]()
-		end
-	end
 	Converted["_MainBar"]:TweenPosition(UDim2.new(0.5, -510, 0, -100), "Out", "Quint", 0.3)
 	Converted["_MainText"]:ReleaseFocus()
 	task.wait(0.3)
 	Converted["_MainText"].Text = ""
 	Converted["_MainBar"].Visible = false
+	if enterPressed then
+		if scriptcmds[Converted["_MainText"].Text] then
+			scriptcmds[Converted["_MainText"].Text]()
+		end
+	end
 end)
 
 userinputService.InputBegan:Connect(function(input, gameprocessedEvent)
