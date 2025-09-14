@@ -866,6 +866,10 @@ if flingpart0 and flingpart1 then
             pcall(destroy, flingpart)
         end
     end
+
+    task.wait(loadtime)
+
+    game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-net")
 end
 
 lp:GetMouse().Button1Down:Connect(fling) --click fling
