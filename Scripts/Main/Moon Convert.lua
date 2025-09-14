@@ -52,17 +52,18 @@ Converted["_UIStroke"].Color = Color3.fromRGB(93.00000205636024, 91.000002175569
 Converted["_UIStroke"].Thickness = 4
 Converted["_UIStroke"].Parent = Converted["_MainBar"]
 
-Converted["_MainText"].FocusLost:Connect(function(enterPressed)
+Converted["_MainText"].FocusLost:Connect(function()
 	Converted["_MainBar"]:TweenPosition(UDim2.new(0.5, -510, 0, -100), "Out", "Quint", 0.3)
 	Converted["_MainText"]:ReleaseFocus()
 	task.wait(0.3)
 	Converted["_MainText"].Text = ""
 	Converted["_MainBar"].Visible = false
+end)
+
+Converted["_MainText"].FocusLost:Connect(function(enterPressed)
 	if enterPressed then
 		if scriptcmds[Converted["_MainText"].Text] then
-			coroutine.resume(coroutine.create(function()
-				scriptcmds[Converted["_MainText"].Text]()
-			end))
+			scriptcmds[Converted["_MainText"].Text]()
 		end
 	end
 end)
