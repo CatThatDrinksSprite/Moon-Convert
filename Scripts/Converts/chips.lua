@@ -1653,9 +1653,9 @@ end)
 if game.Players.LocalPlayer.Character:FindFirstChild("Pillow") then
 	game.Players.LocalPlayer.Character.Pillow.Handle.AccessoryWeld:Destroy()
 	AlignCharacter(game.Players.LocalPlayer.Character.Pillow.Handle, game.Players.LocalPlayer.Character.Chips.Part, Vector3.new(0, 0, 0), Vector3.new(90, 0, 90))
-	for _,v in pairs(alignchar.Dummy.Dummy.Chips:GetChildren()) do
-		if v:IsA("BasePart") then
-			v.Transparency = 1
+	for index, asset in pairs(game.Players.LocalPlayer.Chips:GetChildren()) do
+		if asset:IsA("BasePart") then
+			asset.Transparency = 1
 		end
 	end
 else
