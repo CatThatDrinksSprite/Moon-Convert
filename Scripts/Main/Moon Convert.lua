@@ -5,6 +5,7 @@ if game.PlaceId == 88308889239232 or game.PlaceId == 17574618959 then
 	print("good")
 else
 	sendNotification("Moon Convert", "This script only works in Just a baseplate or Green baseplate.", 7)
+	error("bad")
 end
 local userinputService = game:GetService("UserInputService")
 
