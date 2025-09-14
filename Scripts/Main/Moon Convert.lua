@@ -60,7 +60,9 @@ Converted["_MainText"].FocusLost:Connect(function(enterPressed)
 	Converted["_MainBar"].Visible = false
 	if enterPressed then
 		if scriptcmds[Converted["_MainText"].Text] then
-			scriptcmds[Converted["_MainText"].Text]()
+			coroutine.resume(coroutine.create(function()
+				scriptcmds[Converted["_MainText"].Text]()
+			end))
 		end
 	end
 end)
