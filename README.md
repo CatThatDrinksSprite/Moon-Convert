@@ -5,3 +5,5 @@
 ## // QUICK LINKS //
 
 > Commands https://github.com/sharkymeowwww/Moon-Convert/blob/main/Commands.md
+
+> Hats https://github.com/sharkymeowwww/Moon-Convert/blob/main/Hats.md
