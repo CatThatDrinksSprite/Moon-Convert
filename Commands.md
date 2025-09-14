@@ -1,4 +1,4 @@
 # MOON CONVERT | Commands
-> sonic
+> reanimate
 
-> shopping cart
+> sonic
