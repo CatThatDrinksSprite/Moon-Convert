@@ -233,7 +233,6 @@ function Damage(Part, hit, minim, maxim, knockback, Type, Property, Delay, HitSo
 	end
          if h ~= nil and hit.Parent.Name ~= char.Name and hit.Parent:FindFirstChild("UpperTorso") ~= nil then
 	
-         hit.Parent:FindFirstChild("Head"):BreakJoints()
          end
 
 	if h ~= nil and hit.Parent.Name ~= char.Name and hit.Parent:FindFirstChild("Torso") ~= nil then
@@ -243,7 +242,6 @@ function Damage(Part, hit, minim, maxim, knockback, Type, Property, Delay, HitSo
 			end
 		end
          if insta == true then
-         hit.Parent:FindFirstChild("Head"):BreakJoints()
          end
 		local c = Create("ObjectValue"){
 			Name = "creator",
@@ -267,11 +265,9 @@ function Damage(Part, hit, minim, maxim, knockback, Type, Property, Delay, HitSo
 			end
 		end
 		if blocked == false then
-			h.Health = h.Health - Damage
-			ShowDamage((Part.CFrame * CFrame.new(0, 0, (Part.Size.Z / 2)).p + Vector3.new(0, 1.5, 0)), -Damage, 1.5, tors.BrickColor.Color)
+			
 		else
-			h.Health = h.Health - (Damage / 2)
-			ShowDamage((Part.CFrame * CFrame.new(0, 0, (Part.Size.Z / 2)).p + Vector3.new(0, 1.5, 0)), -Damage, 1.5, tors.BrickColor.Color)
+			
 		end
 		if Type == "Knockdown" then
 			local hum = hit.Parent.Humanoid
@@ -768,7 +764,6 @@ function part(formfactor ,parent, reflectance, transparency, brickcolor, name, s
 	fp.Position = tors.Position 
 	RemoveOutlines(fp)
 	fp.Material = "SmoothPlastic"
-	fp:BreakJoints()
 	return fp 
 end 
  
@@ -831,7 +826,6 @@ function Eviscerate(dude)
 		local val = IT("BoolValue", dude)
 		val.Name = "IsHit"
 		local ds = coroutine.wrap(function()
-			dude:WaitForChild("Head"):BreakJoints()
 			wait(0.5)
 			target = nil
 			coroutine.resume(coroutine.create(function()
@@ -1276,14 +1270,7 @@ NewInstance = function(instance,parent,properties)
 	end
 	return inst;
 end
-hum.MaxHealth = 1.0E298
-hum.Health = 1.0E298
-game:GetService("RunService"):BindToRenderStep("HOT", 0, function()
-  if hum.Health > 0.1 and hum.Health < 1.0E298 then
-    hum.MaxHealth = 1.0E298
-    hum.Health = 1.0E298
-  end
-end)
+
 -------------------------------------------------------
 --End Important Functions--
 -------------------------------------------------------
