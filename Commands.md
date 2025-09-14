@@ -1,4 +1,4 @@
 # MOON CONVERT | Commands
 > sonic
 
-> shoppingcart
+> shopping cart
