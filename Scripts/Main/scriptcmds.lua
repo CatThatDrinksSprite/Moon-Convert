@@ -22,4 +22,8 @@ scriptcmds = {
     sendNotification("Moon Convert", "Ran!", 7)
     loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Converts/shopping%20cart.lua", true))()
   end,
+  ["memeus"] = function()
+    sendNotification("Moon Convert", "Ran!", 7)
+    loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Converts/memeus.lua", true))()
+  end,
 }
