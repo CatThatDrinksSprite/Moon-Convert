@@ -1,7 +1,5 @@
 # MOON CONVERT | Commands
-> pd
-
-> no humanoid
+> reanimate
 
 > reload
 
