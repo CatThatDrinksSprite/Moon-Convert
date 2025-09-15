@@ -1,4 +1,4 @@
-
+loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Other/LoadLibrary.lua", true))()
 
 -----------------------
 --MemeusV2--
@@ -119,7 +119,6 @@ Effects = {}
 -------------------------------------------------------
 ArtificialHB = Instance.new("BindableEvent", script)
 ArtificialHB.Name = "Heartbeat"
-script:WaitForChild("Heartbeat")
 
 frame = 1 / 60
 tf = 0
@@ -128,18 +127,15 @@ tossremainder = false
 
 
 lastframe = tick()
-script.Heartbeat:Fire()
 
 
 game:GetService("RunService").Heartbeat:connect(function(s, p)
 	tf = tf + s
 	if tf >= frame then
 		if allowframeloss then
-			script.Heartbeat:Fire()
 			lastframe = tick()
 		else
 			for i = 1, math.floor(tf / frame) do
-				script.Heartbeat:Fire()
 			end
 			lastframe = tick()
 		end
