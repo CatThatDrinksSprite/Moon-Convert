@@ -2,7 +2,7 @@ loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/
 wait(0.2)
 
 Player = Game:GetService("Players").LocalPlayer
-Character = Player.Character.Dummy.Dummy
+Character = Player.Character
 RootPart = Character["HumanoidRootPart"]
 Humanoid = Character.Humanoid
 PlayerGui = Player.PlayerGui
@@ -87,14 +87,11 @@ local SC = false
 ArtificialHB = Instance.new("BindableEvent", script)
 ArtificialHB.Name = "ArtificialHB"
 
-script:WaitForChild("ArtificialHB")
-
 frame = Frame_Speed
 tf = 0
 allowframeloss = false
 tossremainder = false
 lastframe = tick()
-script.ArtificialHB:Fire()
 
 game:GetService("RunService").Heartbeat:connect(function(s, p)
 	tf = tf + s
@@ -1172,7 +1169,6 @@ local MOVINGSCREENS = false
 local TIMESTAMP = 0
 while true do
 	Swait()
-	script.Parent = WEAPONGUI
 	ANIMATE.Parent = nil
 	for _,v in next, Humanoid:GetPlayingAnimationTracks() do
 	    v:Stop();
