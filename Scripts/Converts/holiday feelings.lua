@@ -338,8 +338,8 @@ pcall(function()
     using = true
     local tors = who:FindFirstChild("Torso") or who:FindFirstChild("UpperTorso")
     local hu = who:FindFirstChildOfClass("Humanoid")
-    hu.PlatformStand = true
-    local weld = Instance.new("Weld",t) weld.Part0 = t weld.Part1 = tors weld.C0 = CFrame.new(0,0,-.9) * CFrame.Angles(rad(0),rad(180),rad(0))
+    hum.PlatformStand = true
+    local weld = Instance.new("Weld",tors) weld.Part0 = tors weld.Part1 = t weld.C0 = CFrame.new(0,0,-.9) * CFrame.Angles(rad(0),rad(180),rad(0))
     local deb = Instance.new("Glue",who) deb.Name = "Hugging"
     tlerp(rsw,{C0 = CFrame.new(-.3,-.2,-.45) * CFrame.Angles(rad(110),rad(0),rad(0)) * CFrame.Angles(rad(0),rad(0),rad(-60))},.4,qui,io)
     tlerp(lsw,{C0 = CFrame.new(.2,-.2,-.45) * CFrame.Angles(rad(105),rad(0),rad(0)) * CFrame.Angles(rad(0),rad(0),rad(65))},.4,qui,io)
@@ -351,7 +351,7 @@ pcall(function()
     tlerp(lsw,{C0 = CFrame.new(0,0,0)},.7,qui,io)
     tlerp(nec,{C0 = CFrame.new(0,1,0) * CFrame.Angles(rad(90),rad(180),rad(0))},.7,qui,io)
     wait(.4)
-    hu.PlatformStand = false
+    hum.PlatformStand = false
     weld:Destroy()
     wait(.4)
     rsw.Part1 = nil
