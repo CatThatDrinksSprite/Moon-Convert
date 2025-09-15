@@ -690,8 +690,7 @@ end
 
 
 
-Character.Humanoid.MaxHealth = 120
-Character.Humanoid.Health = 120
+
  
  local f = 0
  local b = Instance.new("BlurEffect",cam)
@@ -1401,7 +1400,6 @@ bodvol.P= 35200
 bodvol.maxForce=Vector3.new(8e+003, 8e+003, 8e+003)
 bodvol.Parent=homed.Head
 game:GetService("Debris"):AddItem(bodvol, 0.2)
-homed:FindFirstChildOfClass("Humanoid"):TakeDamage(math.random(10,30))
 
 position:Destroy()
 trail.Enabled = false
