@@ -42,4 +42,12 @@ scriptcmds = {
       sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
     end
   end,
+  ["server admin"] = function()
+    sendNotification("Moon Convert", "Ran!", 7)
+    if game.Players.LocalPlayer.Character:FindFirstChild("Model") then
+      loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Converts/server%20admin.lua", true))()
+    else
+      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
+    end
+  end,
 }
