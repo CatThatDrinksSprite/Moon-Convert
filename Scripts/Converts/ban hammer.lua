@@ -855,21 +855,16 @@ function Eviscerate(dude)
 			coroutine.resume(coroutine.create(function()
 				for i, v in pairs(dude:GetChildren()) do
 					if v:IsA("Accessory") then
-						v:Destroy()
 					end
 					if v:IsA("Humanoid") then
-						v:Destroy()
 					end
 					if v:IsA("CharacterMesh") then
-						v:Destroy()
 					end
 					if v:IsA("Model") then
-						v:Destroy()
 					end
 					if v:IsA("Part") or v:IsA("MeshPart") then
 						for x, o in pairs(v:GetChildren()) do
 							if o:IsA("Decal") then
-								o:Destroy()
 							end
 						end
 						coroutine.resume(coroutine.create(function()
@@ -908,7 +903,6 @@ function Eviscerate(dude)
 								PartEmmit1.Enabled = false
 								wait(3)
 								v:Destroy()
-								dude:Destroy()
 							end))
 						end))
 					end
