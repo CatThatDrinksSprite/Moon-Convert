@@ -15,7 +15,7 @@ scriptcmds = {
     if game.Players.LocalPlayer.Character:FindFirstChild("Model") then
       loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Converts/sonic.lua", true))()
     else
-      sendNotification("Moon Convert", "Please use command \"reanimate\" first!", 7)
+      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
     end
   end,
   ["chips"] = function()
@@ -23,7 +23,7 @@ scriptcmds = {
     if game.Players.LocalPlayer.Character:FindFirstChild("Model") then
       loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Converts/chips.lua", true))()
     else
-      sendNotification("Moon Convert", "Please use command \"reanimate\" first!", 7)
+      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
     end
   end,
   ["shopping cart"] = function()
@@ -31,7 +31,7 @@ scriptcmds = {
     if game.Players.LocalPlayer.Character:FindFirstChild("Model") then
       loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Converts/shopping%20cart.lua", true))()
     else
-      sendNotification("Moon Convert", "Please use command \"reanimate\" first!", 7)
+      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
     end
   end,
   ["memeus"] = function()
@@ -39,7 +39,7 @@ scriptcmds = {
     if game.Players.LocalPlayer.Character:FindFirstChild("Model") then
       loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Converts/memeus.lua", true))()
     else
-      sendNotification("Moon Convert", "Please use command \"reanimate\" first!", 7)
+      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
     end
   end,
 }
