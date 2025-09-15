@@ -340,7 +340,6 @@ pcall(function()
     local hu = who:FindFirstChildOfClass("Humanoid")
     hum.PlatformStand = true
     local weld = Instance.new("Weld",tors) weld.Part0 = tors weld.Part1 = t weld.C0 = CFrame.new(0,0,-.9) * CFrame.Angles(rad(0),rad(180),rad(0))
-    local deb = Instance.new("Glue",who) deb.Name = "Hugging"
     tlerp(rsw,{C0 = CFrame.new(-.3,-.2,-.45) * CFrame.Angles(rad(110),rad(0),rad(0)) * CFrame.Angles(rad(0),rad(0),rad(-60))},.4,qui,io)
     tlerp(lsw,{C0 = CFrame.new(.2,-.2,-.45) * CFrame.Angles(rad(105),rad(0),rad(0)) * CFrame.Angles(rad(0),rad(0),rad(65))},.4,qui,io)
     tlerp(nec,{C0 = CFrame.new(-.15,1,0) * CFrame.Angles(rad(90),rad(180),rad(0)) * CFrame.Angles(rad(0),rad(15),rad(25))},.4,qui,io)
@@ -356,7 +355,6 @@ pcall(function()
     wait(.4)
     rsw.Part1 = nil
     lsw.Part1 = nil
-    deb:Destroy()
     hugging = false
     using = false
     end
