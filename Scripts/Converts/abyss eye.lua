@@ -830,8 +830,8 @@ if game.Players.LocalPlayer.Character:FindFirstChild("BladeMasterAccessory") the
 	game.Players.LocalPlayer.Character.BladeMasterAccessory.Handle.AccessoryWeld:Destroy()
 	AlignCharacter(game.Players.LocalPlayer.Character.BladeMasterAccessory.Handle, game.Players.LocalPlayer.Character.Effects.Abyssal_Sword, Vector3.new(0, -1, 0), Vector3.new(0, 0, -135))
 	for index, asset in pairs(game.Players.LocalPlayer.Character.Effects:GetChildren()) do
-		if index:IsA("BasePart")
-			index.Transparency = 1
+		if asset:IsA("BasePart")
+			asset.Transparency = 1
 		end
 	end
 else
