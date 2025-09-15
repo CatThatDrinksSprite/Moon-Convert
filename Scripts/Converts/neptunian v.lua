@@ -1,3 +1,4 @@
+loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
 loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Other/LoadLibrary.lua", true))()
 
 --- Did actually rework heavily away from original neptunian, and the non-rework neptunian. --NoobyGames12
