@@ -531,11 +531,7 @@ function Damage(Part, hit, minim, maxim, knockback, Type, Property, Delay, HitSo
 			end
 		end
 		if blocked == false then
-			h.Health = h.Health - Damage
-			ShowDamage((Part.CFrame * CFrame.new(0, 0, (Part.Size.Z / 2)).p + Vector3.new(0, 1.5, 0)), -Damage, 1.5, tors.BrickColor.Color)
 		else
-			h.Health = h.Health - (Damage / 2)
-			ShowDamage((Part.CFrame * CFrame.new(0, 0, (Part.Size.Z / 2)).p + Vector3.new(0, 1.5, 0)), -Damage, 1.5, tors.BrickColor.Color)
 		end
 		if Type == "Knockdown" then
 			local hum = hit.Parent.Humanoid
@@ -1582,7 +1578,6 @@ function slap()
 	hum.WalkSpeed = 10
 	CreateSound("146163534", hed, 10, 1)
         Character.Head.face.Texture = "rbxassetid://293603561"
-        game.Players.LocalPlayer.Character.Humanoid:TakeDamage(7)
 	CameraEnshaking(1, 2)
 	for i = 0,4,0.1 do
 		swait()
@@ -1603,7 +1598,6 @@ function MYSPAGHETTTTTTT() --ow
 	hum.WalkSpeed = 1.01
 	CreateSound("1282149571", hed, 10, 1)
         Character.Head.face.Texture = "rbxassetid://1329282756"
-        game.Players.LocalPlayer.Character.Humanoid:TakeDamage(10)
 	CameraEnshaking(1, 2.2)
 	for i = 0,4,0.1 do
 		swait()
@@ -1893,7 +1887,6 @@ function HAAAAA() --KONO POWA
 		swait()
 		CameraEnshaking(1, 5)
                 chargeup.Parent = hed
-                game.Players.LocalPlayer.Character.Humanoid:TakeDamage(0.12)
 		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
 		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-65), Rad(0), Rad(0)), 0.3)
 		RH.C0 = clerp(RH.C0, CF(1.1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-20), Rad(0), Rad(0)), 0.15)
@@ -2494,7 +2487,6 @@ attack = true
 		LW.C0 = clerp(LW.C0, CF(-1.3, 0.8 + 0.05 * Sin(sine / 30), -0.025 * Cos(sine / 20)) * angles(Rad(40), Rad(0), Rad(40)), 0.4)
 	end
 Character.Head.face.Texture = "rbxassetid://30128383"
-hum.MaxHealth = 0
 ragdoll(char)
 CreateSound("534269232", hed, 5, 1)
 error("Seems like you just died.")
