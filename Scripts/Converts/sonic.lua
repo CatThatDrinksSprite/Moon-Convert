@@ -61,7 +61,6 @@ cam = workspace.CurrentCamera
 local RbxUtility = LoadLibrary("RbxUtility")
 local Create = RbxUtility.Create
 deb = game:GetService("Debris")
-Face.Transparency = 0
 --Face.Texture = "rbxassetid://176217905" --176217905
 Humanoid.WalkSpeed = 64
 local freefall = 0
