@@ -11,3 +11,5 @@
 > Server Admin None
 
 > Holiday Feelings None
+
+Make sure u load the hat before running reanimate!
