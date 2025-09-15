@@ -825,6 +825,19 @@ function AbyssalShriek()
 		Rooted = false
 	end
 end
+
+if game.Players.LocalPlayer.Character:FindFirstChild("BladeMasterAccessory") then
+	game.Players.LocalPlayer.Character.BladeMasterAccessory.Handle.AccessoryWeld:Destroy()
+	AlignCharacter(game.Players.LocalPlayer.Character.BladeMasterAccessory.Handle, game.Players.LocalPlayer.Character.Effects.Abyssal_Sword, Vector3.new(0, -1, 0), Vector3.new(0, 0, -135))
+	for index, asset in pairs(game.Players.LocalPlayer.Character.Effects:GetChildren()) do
+		if index:IsA("BasePart")
+			index.Transparency = 1
+		end
+	end
+else
+	sendNotification("Moon Convert", "It is recommended to wear the hat used for this script... Find the hat id in the github page!", 7)
+end
+
 function AbyssalDash()
 	ATTACK = true
 	Rooted = true
