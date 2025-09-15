@@ -8,6 +8,8 @@
 
 > Hats https://github.com/sharkymeowwww/Moon-Convert/blob/main/Hats.md
 
+> Discord https://discord.gg/DPBtncwaEm
+
 # What are you waiting for? Use it now!
 
 ```lua
