@@ -94,14 +94,13 @@ local FADERS = true
 ArtificialHB = Instance.new("BindableEvent", script)
 ArtificialHB.Name = "ArtificialHB"
 
-script:WaitForChild("ArtificialHB")
+
 
 frame = Frame_Speed
 tf = 0
 allowframeloss = false
 tossremainder = false
 lastframe = tick()
-script.ArtificialHB:Fire()
 
 game:GetService("RunService").Heartbeat:connect(function(s, p)
 	tf = tf + s
