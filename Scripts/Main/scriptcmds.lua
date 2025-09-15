@@ -1,9 +1,13 @@
 loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
 
 scriptcmds = {
-  ["reanimate"] = function()
+  ["pd"] = function()
     sendNotification("Moon Convert", "Reanimating!", 7)
-    loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Reanimation/MyWorld.lua", true))()
+    loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Reanimation/PD.lua", true))()
+  end,
+  ["no humanoid"] = function()
+    sendNotification("Moon Convert", "Reanimation!", 7)
+    loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Reanimation/No%20Humanoid.lua", true))()
   end,
   ["reload"] = function()
     sendNotification("Moon Convert", "Reloading!", 7)
@@ -15,7 +19,7 @@ scriptcmds = {
     if game.Players.LocalPlayer.Character:FindFirstChild("Model") then
       loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Converts/sonic.lua", true))()
     else
-      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
+      sendNotification("Moon Convert", "Please use command \"pd\" or \"no humanoid\" first.", 7)
     end
   end,
   ["chips"] = function()
@@ -23,7 +27,7 @@ scriptcmds = {
     if game.Players.LocalPlayer.Character:FindFirstChild("Model") then
       loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Converts/chips.lua", true))()
     else
-      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
+      sendNotification("Moon Convert", "Please use command \"pd\" or \"no humanoid\" first.", 7)
     end
   end,
   ["shopping cart"] = function()
@@ -31,7 +35,7 @@ scriptcmds = {
     if game.Players.LocalPlayer.Character:FindFirstChild("Model") then
       loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Converts/shopping%20cart.lua", true))()
     else
-      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
+      sendNotification("Moon Convert", "Please use command \"pd\" or \"no humanoid\" first.", 7)
     end
   end,
   ["memeus"] = function()
@@ -39,7 +43,7 @@ scriptcmds = {
     if game.Players.LocalPlayer.Character:FindFirstChild("Model") then
       loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Converts/memeus.lua", true))()
     else
-      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
+      sendNotification("Moon Convert", "Please use command \"pd\" or \"no humanoid\" first.", 7)
     end
   end,
 }
