@@ -3,8 +3,8 @@
 
 > reload
 
-> sonic (Requires Reanimate)
+> sonic
 
-> chips (Requires Reanimate) (Hat Recommended)
+> chips
 
-> shopping cart (Requires Reanimate) (Hat Recommended)
+> shopping cart
