@@ -6,7 +6,7 @@ scriptcmds = {
     loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Reanimation/PD.lua", true))()
   end,
   ["no humanoid"] = function()
-    sendNotification("Moon Convert", "Reanimation!", 7)
+    sendNotification("Moon Convert", "Reanimating!", 7)
     loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Reanimation/No%20Humanoid.lua", true))()
   end,
   ["reload"] = function()
