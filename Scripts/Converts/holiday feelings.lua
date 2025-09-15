@@ -339,7 +339,7 @@ pcall(function()
     local tors = who:FindFirstChild("Torso") or who:FindFirstChild("UpperTorso")
     local hu = who:FindFirstChildOfClass("Humanoid")
     hum.PlatformStand = true
-    local weld = Instance.new("Weld",tors) weld.Part0 = tors weld.Part1 = t weld.C0 = CFrame.new(0,0,-.9) * CFrame.Angles(rad(0),rad(180),rad(0))
+    local weld = Instance.new("Weld",tors) weld.Part0 = tors weld.Part1 = t weld.C0 = CFrame.new(0,0,.9)
     tlerp(rsw,{C0 = CFrame.new(-.3,-.2,-.45) * CFrame.Angles(rad(110),rad(0),rad(0)) * CFrame.Angles(rad(0),rad(0),rad(-60))},.4,qui,io)
     tlerp(lsw,{C0 = CFrame.new(.2,-.2,-.45) * CFrame.Angles(rad(105),rad(0),rad(0)) * CFrame.Angles(rad(0),rad(0),rad(65))},.4,qui,io)
     tlerp(nec,{C0 = CFrame.new(-.15,1,0) * CFrame.Angles(rad(90),rad(180),rad(0)) * CFrame.Angles(rad(0),rad(15),rad(25))},.4,qui,io)
