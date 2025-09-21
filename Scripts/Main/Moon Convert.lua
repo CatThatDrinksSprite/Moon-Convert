@@ -72,6 +72,11 @@ Converted["_MainText"].FocusLost:Connect(function(enterPressed)
 	if enterPressed then
 		if scriptcmds[Converted["_MainText"].Text] then
 			scriptcmds[Converted["_MainText"].Text]()
+			elseif Converted["_MainText"].Text == "help" then
+				for index, asset in pairs(scriptcmds) do
+					print(index)
+					game:GetService("StarterGui"):SetCore("DevConsoleVisible", true)
+				end
 		end
 	end
 end)
