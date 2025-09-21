@@ -15,3 +15,10 @@
 ```lua
 loadstring(game:HttpGet("https://github.com/luanecoarc/Moon-Convert/raw/main/Scripts/Main/Moon%20Convert.lua", true))()
 ```
+
+## CREDITS
+luanecoarc (made this script)
+
+veser made the animation to cframe plugin for the dance scripts + awesome
+
+whoever made the original fd scripts
