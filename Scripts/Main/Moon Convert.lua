@@ -1,7 +1,7 @@
 loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Main/scriptcmds.lua", true))()
 loadstring(game:HttpGet("https://github.com/sharkymeowwww/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
 print(game.PlaceId)
-if game.PlaceId == 88308889239232 or game.PlaceId == 17574618959 or game.PlaceId == 109058204540899 then
+if game.PlaceId == 88308889239232 or game.PlaceId == 17574618959 or game.PlaceId == 92637633202893 then
 	print("good")
 else
 	sendNotification("Moon Convert", "This script only works in Just a baseplate, Snowy Fencing or Green baseplate.", 7)
