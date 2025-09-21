@@ -12,4 +12,8 @@
 
 > Holiday Feelings None
 
+> Orange Justice None
+
+> Clean Groove None
+
 Make sure u load the hat before running reanimate!
