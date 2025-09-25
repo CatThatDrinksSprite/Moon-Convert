@@ -35,7 +35,7 @@ if game.Players.LocalPlayer.Character:FindFirstChild("Shopping Cart") then
       end
     end
 else
-  sendNotification("Moon Convert", "It is recommended to wear the hat used for this script... You can get the hat by using \"get hats;shopping cart\"", 7)
+  sendNotification("Moon Convert", "It is recommended to wear the hats used for this script... You can get the hats by using \"get hats;shopping cart\"", 7)
 end
 for i = 1,20 do
     wait()
