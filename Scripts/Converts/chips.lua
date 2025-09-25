@@ -1659,7 +1659,7 @@ if game.Players.LocalPlayer.Character:FindFirstChild("Pillow") then
 		end
 	end
 else
-	sendNotification("Moon Convert", "It is recommended to wear the hat used for this script... Find the hat id in the github page!", 7)
+	sendNotification("Moon Convert", "It is recommended to wear the hat used for this script... You can get the hat by using \"get hats;chips\"", 7)
 end
 
 
