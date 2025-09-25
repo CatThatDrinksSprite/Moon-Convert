@@ -74,4 +74,12 @@ scriptcmds = {
       sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
     end
   end,
+  ["get hats;chips"] = function()
+    sendNotification("Moon Convert", "Getting Hats!", 7)
+    if game.Players.LocalPlayer.Character:FindFirstChild("Model") then
+      sendNotification("Moon Convert", "Please get hats before reanimating", 7)
+    else
+      game:GetService("TextChatService").TextChannels.RBXSystem:SendAsync("-gh 4964938812")
+    end
+  end,
 }
