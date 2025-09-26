@@ -1166,7 +1166,7 @@ function CreateWeld(Parent, Part0, Part1, C0, C1)
 end
  
 Player=game:GetService("Players").LocalPlayer
-Character=Player.Character.Dummy.Dummy
+Character=Player.Character
 PlayerGui=Player.PlayerGui
 Backpack=Player.Backpack
 Torso=Character.Torso
