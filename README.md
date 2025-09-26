@@ -4,8 +4,6 @@
 
 ## // QUICK LINKS //
 
-> Hats https://github.com/luanecoarc/Moon-Convert/blob/main/Hats.md
-
 > Discord https://discord.gg/DPBtncwaEm
 
 # What are you waiting for? Use it now!
