@@ -2,7 +2,7 @@ loadstring(game:HttpGet('https://github.com/luanecoarc/Moon-Convert/raw/main/Scr
 print("> Running Nebula Star Glitcher by Nebula_Zorua")
 
 plr = Game:GetService("Players").LocalPlayer
-char = plr.Character.Dummy.Dummy
+char = plr.Character
 hum = char.Humanoid
 local cam = game.Workspace.CurrentCamera
 Camera = cam
