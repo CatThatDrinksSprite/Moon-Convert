@@ -1352,7 +1352,7 @@ local bg=Instance.new("BodyGyro")
 local ArtificialHB = Instance.new("BindableEvent", script)
 ArtificialHB.Name = "Heartbeat"
  
-script:WaitForChild("Heartbeat")
+
  
 local tf = 0
 local allowframeloss = false
