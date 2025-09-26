@@ -74,6 +74,14 @@ scriptcmds = {
       sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
     end
   end,
+  ["nebula star glitcher"] = function()
+    sendNotification("Moon Convert", "Ran!", 7)
+    if game.Players.LocalPlayer.Character:FindFirstChild("Model") then
+      loadstring(game:HttpGet("https://github.com/luanecoarc/Moon-Convert/raw/main/Scripts/Converts/nebula%20star%20glitcher.lua", true))()
+    else
+      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
+    end
+  end,
   ["get hats;chips"] = function()
     sendNotification("Moon Convert", "Getting Hats!", 7)
     if game.Players.LocalPlayer.Character:FindFirstChild("Model") then
