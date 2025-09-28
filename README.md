@@ -6,6 +6,8 @@
 
 > Discord https://discord.gg/DPBtncwaEm
 
+> Custom Theme Example https://github.com/luanecoarc/Moon-Convert/blob/main/custom%20theme%20example.lua
+
 # What are you waiting for? Use it now!
 
 ```lua
