@@ -77,6 +77,10 @@ Converted["_MainText"].FocusLost:Connect(function(enterPressed)
 					game:GetService("TestService"):Message(index)
 					game:GetService("StarterGui"):SetCore("DevConsoleVisible", true)
 				end
+			elseif Converted["_MainText"].Text == "reload" then
+				sendNotification("Moon Convert", "Reloading!", 7)
+    game:GetService("CoreGui")["Moon Convert"]:Destroy()
+    loadstring(game:HttpGet("https://github.com/luanecoarc/Moon-Convert/raw/main/Scripts/Main/Moon%20Convert.lua", true))()
 		end
 	end
 end)
