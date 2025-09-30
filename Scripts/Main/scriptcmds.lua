@@ -124,6 +124,7 @@ scriptcmds = {
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 63690008")
       task.wait(1)
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 62234425")
+      sendNotification("Moon Convert", "Finished multi-set hats!", 7)
     end
   end
 }
