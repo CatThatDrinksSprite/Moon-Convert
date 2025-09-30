@@ -116,13 +116,13 @@ scriptcmds = {
     else
       -- // game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 29532720 451220849 62724852 63690008 62234425")
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 29532720")
-      task.wait(3)
+      task.wait(1)
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 451220849")
-      task.wait(3)
+      task.wait(1)
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 62724852")
-      task.wait(3)
+      task.wait(1)
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 63690008")
-      task.wait(3)
+      task.wait(1)
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 62234425")
     end
   end
