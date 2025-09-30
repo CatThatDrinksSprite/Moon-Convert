@@ -92,5 +92,21 @@ scriptcmds = {
     else
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 4794163533")
     end
+  end,
+  ["doll;50"] = function()
+    sendNotification("Moon Convert", "Ran!", 7)
+    if game.Players.LocalPlayer.Character:FindFirstChild("Model") then
+      loadstring(game:HttpGet("https://github.com/luanecoarc/Moon-Convert/raw/main/Scripts/Converts/doll%3B50.lua", true))()
+    else
+      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
+    end
+  end,
+  ["get hats;doll"] = function()
+    sendNotification("Moon Convert", "Getting Hats!", 7)
+    if game.Players.LocalPlayer.Character:FindFirstChild("Model") then
+      sendNotification("Moon Convert", "Please get hats before reanimating", 7)
+    else
+      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 29532720 451220849 62724852 63690008 62234425")
+    end
   end
 }
