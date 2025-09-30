@@ -115,6 +115,7 @@ scriptcmds = {
       sendNotification("Moon Convert", "Please get hats before reanimating", 7)
     else
       -- // game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 29532720 451220849 62724852 63690008 62234425")
+      sendNotification("Moon Convert", "This is a multi-set so be patient for it to fully load!", 7)
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 29532720")
       task.wait(1)
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 451220849")
