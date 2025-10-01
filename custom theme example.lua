@@ -3,7 +3,6 @@ print(game.PlaceId)
 if game.PlaceId == 88308889239232 or game.PlaceId == 17574618959 or game.PlaceId == 92637633202893 then
     print("good")
 else
-    sendNotification("Moon Convert", "This script only works in Just a baseplate, Snowy Fencing or Green baseplate.", 7)
     error("bad")
 end
 local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"))()
