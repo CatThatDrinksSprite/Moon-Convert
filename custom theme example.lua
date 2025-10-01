@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://github.com/luanecoarc/Moon-Convert/raw/main/Scripts/Main/scriptcmds.lua", true))()
+loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Scripts/Main/scriptcmds.lua", true))()
 print(game.PlaceId)
 if game.PlaceId == 88308889239232 or game.PlaceId == 17574618959 or game.PlaceId == 92637633202893 then
     print("good")
