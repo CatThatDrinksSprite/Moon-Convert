@@ -127,6 +127,7 @@ end
       local shuffledids = shuffleTable(ids)
 
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh " .. table.concat(shuffledids, " "))
+      print("-gh " .. table.concat(shuffledids, " "))
     end
   end
 }
