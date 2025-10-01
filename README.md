@@ -20,12 +20,4 @@ sharkywhiskers (made this script)
 
 veser made the animation to cframe plugin for the dance scripts + awesome
 
-whoever made the original fd scripts
-
-## // CUSTOM THEME CREDITS //
-
-no one has made custom themes yet
-
-## // CUSTOM THEMES //
-
-no one has made custom themes yet
+whoever made the original fd/require scripts
