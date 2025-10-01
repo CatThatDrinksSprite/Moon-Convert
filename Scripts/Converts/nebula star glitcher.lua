@@ -1,4 +1,4 @@
-loadstring(game:HttpGet('https://github.com/luanecoarc/Moon-Convert/raw/main/Scripts/Other/LoadLibrary.lua', true))()
+loadstring(game:HttpGet('https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Scripts/Other/LoadLibrary.lua', true))()
 print("> Running Nebula Star Glitcher by Nebula_Zorua")
 
 plr = Game:GetService("Players").LocalPlayer
