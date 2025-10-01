@@ -1,5 +1,5 @@
-loadstring(game:HttpGet("https://github.com/luanecoarc/Moon-Convert/raw/main/Scripts/Main/scriptcmds.lua", true))()
-loadstring(game:HttpGet("https://github.com/luanecoarc/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
+loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Scripts/Main/scriptcmds.lua", true))()
+loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
 print(game.PlaceId)
 if game.PlaceId == 88308889239232 or game.PlaceId == 17574618959 or game.PlaceId == 92637633202893 then
 	print("good")
@@ -80,7 +80,7 @@ Converted["_MainText"].FocusLost:Connect(function(enterPressed)
 			elseif Converted["_MainText"].Text == "reload" then
 				sendNotification("Moon Convert", "Reloading!", 7)
     game:GetService("CoreGui")["Moon Convert"]:Destroy()
-    loadstring(game:HttpGet("https://github.com/luanecoarc/Moon-Convert/raw/main/Scripts/Main/Moon%20Convert.lua", true))()
+    loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Scripts/Main/Moon%20Convert.lua", true))()
 		end
 	end
 end)
