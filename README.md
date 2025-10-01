@@ -1,22 +1,22 @@
 # MOON CONVERT | An opensource script for just a baseplate, That turns FD scripts into FE Scripts
 
-![moonconvert](https://github.com/luanecoarc/Moon-Convert/raw/main/moonconvert.png)
+![moonconvert](https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/moonconvert.png)
 
 ## // QUICK LINKS //
 
 > Discord https://discord.gg/DPBtncwaEm
 
-> Custom Theme Example https://github.com/luanecoarc/Moon-Convert/blob/main/custom%20theme%20example.lua
+> Custom Theme Example https://github.com/sharkywhiskersmeow/Moon-Convert/blob/main/custom%20theme%20example.lua
 
 # What are you waiting for? Use it now!
 
 ```lua
-loadstring(game:HttpGet("https://github.com/luanecoarc/Moon-Convert/raw/main/Scripts/Main/Moon%20Convert.lua", true))()
+loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Scripts/Main/Moon%20Convert.lua", true))()
 ```
 
 ## // CREDITS //
 
-luanecoarc (made this script)
+sharkywhiskers (made this script)
 
 veser made the animation to cframe plugin for the dance scripts + awesome
 
