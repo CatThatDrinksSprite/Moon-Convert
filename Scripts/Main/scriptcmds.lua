@@ -83,6 +83,7 @@ scriptcmds = {
       sendNotification("Moon Convert", "Please get hats before reanimating", 7)
     else
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 4964938812")
+      print("-gh 4964938812")
     end
   end,
   ["get hats;shopping cart"] = function()
@@ -91,6 +92,7 @@ scriptcmds = {
       sendNotification("Moon Convert", "Please get hats before reanimating", 7)
     else
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 4794163533")
+      print("-gh 4794163533")
     end
   end,
   ["doll;50"] = function()
