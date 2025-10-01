@@ -114,17 +114,7 @@ scriptcmds = {
     if game.Players.LocalPlayer.Character:FindFirstChild("Model") then
       sendNotification("Moon Convert", "Please get hats before reanimating", 7)
     else
-      sendNotification("Moon Convert", "This is a multi-set so be patient for it to fully load!", 7)
-      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 48474294 48474313")
-      task.wait(2)
-      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 451220849")
-      task.wait(2)
-      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 62724852")
-      task.wait(2)
-      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 63690008")
-      task.wait(2)
-      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 62234425")
-      sendNotification("Moon Convert", "Finished multi-set hats!", 7)
+      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 48474294 48474313 451220849 62724852 63690008 62234425")
     end
   end
 }
