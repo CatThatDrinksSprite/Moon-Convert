@@ -631,7 +631,7 @@ AlignCharacter(game.Players.LocalPlayer.Character["Kate Hair"].Handle, riggy["Le
 AlignCharacter(game.Players.LocalPlayer.Character["Pal Hair"].Handle, riggy["Right Leg"], Vector3.new(0, 0, 0), Vector3.new(90, 0, 0))
 AlignCharacter(game.Players.LocalPlayer.Character.Hat1.Handle, riggy["Left Leg"], Vector3.new(0, 0, 0), Vector3.new(90, 0, 0))
 AlignCharacter(game.Players.LocalPlayer.Character["Pink Hair"].Handle, riggy.Torso, Vector3.new(0.5, 0, 0), Vector3.new(90, 0, 0))
-AlignCharacter(game.Players.LocalPlayer.Character["Robloxclassicred"].Handle, riggy.Torso, Vector3.new(0.5, 0, 0), Vector3.new(90, 0, 0))
+AlignCharacter(game.Players.LocalPlayer.Character["Robloxclassicred"].Handle, riggy.Torso, Vector3.new(-0.5, 0, 0), Vector3.new(90, 0, 0))
 for index, asset in pairs(riggy:GetChildren()) do
 		if asset:IsA("BasePart") then
 			asset.Transparency = 1
