@@ -114,9 +114,19 @@ scriptcmds = {
     if game.Players.LocalPlayer.Character:FindFirstChild("Model") then
       sendNotification("Moon Convert", "Please get hats before reanimating", 7)
     else
-      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 48474294 48474313")
-    task.wait(2)
-      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 451220849 62724852 63690008 62234425")
+      -- // hello just a baseplate owner, i stole this from ai lmao too lazy
+      local function shuffleTable(t)
+    local n = #t
+    for i = n, 2, -1 do
+        local j = math.random(1, i)
+        t[i], t[j] = t[j], t[i]
+    end
+    return t
+end
+      local ids = {"48474294", "48474313", "451220849", "62724852", "63690008", "62234425"}
+      local shuffledids = shuffleTable(ids)
+
+      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh " .. table.concat(shuffledids, " "))
     end
   end
 }
