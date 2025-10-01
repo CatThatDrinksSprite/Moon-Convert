@@ -117,6 +117,7 @@ scriptcmds = {
       sendNotification("Moon Convert", "Please get hats before reanimating", 7)
     else
       -- // hello just a baseplate owner, i stole this from ai lmao too lazy
+      -- // if you want dm sharkywhiskers_meow on discord
       local function shuffleTable(t)
     local n = #t
     for i = n, 2, -1 do
