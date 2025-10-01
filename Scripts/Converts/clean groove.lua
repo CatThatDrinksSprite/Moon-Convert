@@ -19,11 +19,12 @@ for _, v in pairs(Animator:GetPlayingAnimationTracks()) do
 end
 
 local Motor6DMap = {
-	["Torso"] = "RootJoint",
-	["Left Arm"] = "Left Shoulder",
-	["Right Arm"] = "Right Shoulder",
-	["Left Leg"] = "Left Hip",
-	["Right Leg"] = "Right Hip"
+    ["Head"] = "Neck",
+    ["Torso"] = "RootJoint",
+    ["Left Arm"] = "Left Shoulder",
+    ["Right Arm"] = "Right Shoulder",
+    ["Left Leg"] = "Left Hip",
+    ["Right Leg"] = "Right Hip"
 }
 
 local Motors = {}
