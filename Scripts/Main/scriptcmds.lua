@@ -114,7 +114,7 @@ scriptcmds = {
     if game.Players.LocalPlayer.Character:FindFirstChild("Model") then
       sendNotification("Moon Convert", "Please get hats before reanimating", 7)
     else
-      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 48474294 48474313 451220849 62724852 63690008 62234425")
+      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 451220849 62724852 63690008 62234425 48474294 48474313")
     end
   end
 }
