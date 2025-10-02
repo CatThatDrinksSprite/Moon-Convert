@@ -1,4 +1,4 @@
-# MOON CONVERT | An opensource script for just a baseplate, That turns FD/Require scripts into FE Scripts. We also have some of our own scripts!
+# MOON CONVERT | An opensource script for just a baseplate, That has FD/Require scripts turned into FE Scripts. We also have some of our own scripts!
 
 ![moonconvert](https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Images/moonconvert.png)
 
