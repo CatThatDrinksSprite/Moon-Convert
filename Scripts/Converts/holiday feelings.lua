@@ -6,7 +6,8 @@ warn([[E - Hug
 Q - Throw snowbal
 F - Place a gift
 C - TP
-Z - Sit]])
+Z - Sit
+M - Play/Pause Music]])
 local plr = game:GetService("Players").LocalPlayer
 local plrg = plr.PlayerGui
 local mouse = plr:GetMouse()
@@ -771,6 +772,9 @@ pcall(function()
     if key == "r"and not using then
         --candybag()
     end
+	if key == "m" then
+		pcall(function() t["Song"].Playing = not t["Song"].Playing end) --ugly but it works, rather this than globalizing the music instance
+	end
 end)
 end)
 mouse.Button1Down:Connect(function()
