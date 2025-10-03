@@ -14,8 +14,10 @@ loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/
 
 ## // CREDITS //
 
-sharkywhiskers (made this script)
+sharkywhiskers - made this script
 
-veser made the animation to cframe plugin for the dance scripts + awesome
+veser - made the animation to cframe plugin for the dance scripts + awesome
 
 whoever made the original fd/require scripts
+
+i forgot his name - made the reanimate
