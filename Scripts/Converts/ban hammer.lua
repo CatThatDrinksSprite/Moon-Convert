@@ -1340,17 +1340,13 @@ end)
 if game.Players.LocalPlayer.Character:FindFirstChild("MARTILLO") then
   game.Players.LocalPlayer.Character["MARTILLO"].Handle.AccessoryWeld:Destroy()
   AlignCharacter(game.Players.LocalPlayer.Character["MARTILLO"].Handle, game.Players.LocalPlayer.Character.Blob, Vector3.new(0, 0, -0.6), Vector3.new(0, 90, -15))
-  for index, asset in pairs(game.Players.LocalPlayer.Character.Blob:GetChildren()) do
+  for index, asset in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
     if asset:IsA("BasePart") then
         asset.Transparency = 1
     end
   end
-end
-
-for _,v in pairs(char:GetChildren()) do
-	if v:IsA("BasePart") then
-		v.Transparency = 1
-	end
+else
+	sendNotification("Moon Convert", "It is recommended to wear the hats used for this script... You can get the hats by using \"get hats;ban hammer\"", 7)
 end
 
 -------------------------------------------------------
