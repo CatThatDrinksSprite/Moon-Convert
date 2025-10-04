@@ -1,6 +1,11 @@
 loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
 loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Scripts/Other/AlignCharacter.lua", true))()
 
+local sounds = {
+	["Impacts"] = {8142423452},
+	["Exhales"] = {4792915329}
+}
+
 -- // male
 
 local Players = game:GetService("Players")
@@ -738,6 +743,23 @@ for index, asset in pairs(riggy:GetChildren()) do
     else
     sendNotification("Moon Convert", "It is recommended to wear the hats used for this script... You can get the hats by using \"get hats;doll\"", 7)
 end
+coroutine.resume(coroutine.create(function()
+	while true do
+		local sfx = Instance.new("Sound")
+		sfx.Parent = riggy.Torso
+		sfx.Volume = 1
+		sfx.SoundId = "rbxassetid://" .. sounds.Impacts[math.random(1, #sounds.Impacts)]
+		sfx:Play()
+		if math.random() <= 0.4 then
+					local sfx = Instance.new("Sound")
+					sfx.Parent = riggy.Torso
+					sfx.Volume = 1
+					sfx.SoundId = "rbxassetid://" .. sounds.Exhales[math.random(1, #sounds.Exhales)]
+					sfx:Play()
+		end
+		sfx.Ended:Wait()
+	end
+end))
 
 local Animator = Humanoid:FindFirstChildOfClass("Animator") or Instance.new("Animator", Humanoid)
 
