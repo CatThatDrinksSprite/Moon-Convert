@@ -651,11 +651,13 @@ coroutine.resume(coroutine.create(function()
 		sfx.Parent = riggy.Torso
 		sfx.Volume = 1
 		sfx.SoundId = "rbxassetid://" .. sounds.Impacts[math.random(1, #sounds.Impacts)]
+		sfx:Play()
 		if math.random() <= 0.3 then
 					local sfx = Instance.new("Sound")
 					sfx.Parent = riggy.Torso
 					sfx.Volume = 1
 					sfx.SoundId = "rbxassetid://" .. sounds.Exhales[math.random(1, #sounds.Exhales)]
+					sfx:Play()
 		end
 		task.wait(2)
 	end
