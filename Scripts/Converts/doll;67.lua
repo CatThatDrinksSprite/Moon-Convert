@@ -652,7 +652,7 @@ coroutine.resume(coroutine.create(function()
 		sfx.Volume = 1
 		sfx.SoundId = "rbxassetid://" .. sounds.Impacts[math.random(1, #sounds.Impacts)]
 		sfx:Play()
-		if math.random() <= 0.3 then
+		if math.random() <= 0.4 then
 					local sfx = Instance.new("Sound")
 					sfx.Parent = riggy.Torso
 					sfx.Volume = 1
