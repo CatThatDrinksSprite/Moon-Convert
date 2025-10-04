@@ -1,3 +1,7 @@
+makefolder("Moon Convert")
+writefile("Moon Convert/moonlogo.jpg", game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Images/moonlogo.jpg", true))
+writefile("Moon Convert/moonconvert.png", game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Images/moonconvert.png", true))
+writefile("Moon Convert/pfp.jpg", game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Images/pfp.jpg", true))
 loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Scripts/Main/scriptcmds.lua", true))()
 loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
 print(game.PlaceId)
