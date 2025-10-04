@@ -97,7 +97,6 @@ end
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh " .. table.concat(shuffledids, " "))
       print("-gh " .. table.concat(shuffledids, " "))
     end
-    end
   end,
   ["get hats;shopping cart"] = function()
     sendNotification("Moon Convert", "Getting Hats!", 7)
@@ -117,7 +116,6 @@ end
 
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh " .. table.concat(shuffledids, " "))
       print("-gh " .. table.concat(shuffledids, " "))
-    end
     end
   end,
   ["doll;50"] = function()
