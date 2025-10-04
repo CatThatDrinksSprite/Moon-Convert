@@ -8,6 +8,7 @@ else
 	error("bad")
 end
 local userinputService = game:GetService("UserInputService")
+local textchatService = game:GetService("TextChatService")
 
 local Converted = {
 	["_Moon Convert"] = Instance.new("ScreenGui");
@@ -101,4 +102,11 @@ userinputService.InputBegan:Connect(function(input, gameprocessedEvent)
 		end
 	end
 end)
+textchatService.OnIncomingMessage = function(message)
+	if message.TextSource and message.TextSource.UserId == game.Players.LocalPlayer.UserId then
+		if message.Text == "-rs" or message.Text == "-gr" or message.Text == "-re" then
+			sendNotification("Moon Convert", "It is recommended to rejoin instead of respawning, Some of our scripts could break!", 7)
+		end
+	end
+end
 sendNotification("Moon Convert", "Loaded! Click Right Alt to Open the Command Bar, And type help for a list of commands.", 7)
