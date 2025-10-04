@@ -82,7 +82,6 @@ scriptcmds = {
     if game.Players.LocalPlayer.Character:FindFirstChild("Model") then
       sendNotification("Moon Convert", "Please get hats before reanimating", 7)
     else
-      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 4964938812")
       local function shuffleTable(t)
     local n = #t
     for i = n, 2, -1 do
