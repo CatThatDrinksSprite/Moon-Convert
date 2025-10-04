@@ -195,4 +195,4 @@ game:GetService("RunService").Heartbeat:Connect(function()
 		end
 	end
 end)
-sendNotification("Moon Convert", "Loaded! Click Right Alt to Open the Command Bar, And type help for a list of commands.", 7)
+sendNotification("Moon Convert", "Loaded! Click Right Alt to Open the Command Bar.", 7)
