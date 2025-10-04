@@ -157,6 +157,13 @@ userinputService.InputBegan:Connect(function(input, gameprocessedEvent)
 		end
 	end
 end)
+textchatService.OnIncomingMessage = function(message)
+	if message.TextSource and message.TextSource.UserId == game.Players.LocalPlayer.UserId then
+		if message.Text == "-rs" or message.Text == "-gr" or message.Text == "-re" then
+			sendNotification("Moon Convert", "It is recommended to rejoin instead of respawning, Some of our scripts could break!", 7)
+		end
+	end
+end
 function addcmd(cmdname)
 	local Convertedd = {
 		["_Template"] = Instance.new("TextLabel");
