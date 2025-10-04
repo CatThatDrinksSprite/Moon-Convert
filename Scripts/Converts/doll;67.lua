@@ -659,7 +659,7 @@ coroutine.resume(coroutine.create(function()
 					sfx.SoundId = "rbxassetid://" .. sounds.Exhales[math.random(1, #sounds.Exhales)]
 					sfx:Play()
 		end
-		task.wait(1)
+		task.wait(1.002)
 	end
 end))
 
