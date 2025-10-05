@@ -5134,7 +5134,7 @@ end
 
 --// character variable here
 plr = game:GetService("Players").LocalPlayer
-char = plr.Character.Dummy.Dummy
+char = plr.Character
 hum = char.Humanoid
 local cam = game.Workspace.CurrentCamera
 t = char.Torso
@@ -5634,7 +5634,7 @@ function CreateWeld(Parent, Part0, Part1, C0, C1)
 end
 --// other variable for character ig idk
 Player=game:GetService("Players").LocalPlayer
-Character=Player.Character.Dummy.Dummy
+Character=Player.Character
 PlayerGui=Player.PlayerGui 
 Backpack=Player.Backpack 
 Torso=Character.Torso 
