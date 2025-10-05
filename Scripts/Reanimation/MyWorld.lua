@@ -335,6 +335,7 @@ if hatcollide then
 end
 
 local model = Instance.new("Model", c)
+model.Name = "MyWorldDetection"
 model:GetPropertyChangedSignal("Parent"):Connect(function()
     if not (model and model.Parent) then
         model = nil
