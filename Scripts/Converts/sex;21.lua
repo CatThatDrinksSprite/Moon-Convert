@@ -3,8 +3,50 @@ loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/
 
 local sounds = {
 	["Impacts"] = {8142423452},
-	["Exhales"] = {4792915329}
+	["Exhales"] = {4792915329},
+	["Nuts"] = {9114687069}
 }
+
+local Converted = {
+	["_Cumscene"] = Instance.new("ScreenGui");
+	["_CumFrame"] = Instance.new("ImageLabel");
+	["_Cum"] = Instance.new("TextButton");
+	["_UICorner"] = Instance.new("UICorner");
+}
+
+
+
+Converted["_Cumscene"].IgnoreGuiInset = true
+Converted["_Cumscene"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
+Converted["_Cumscene"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_Cumscene"].Name = "Cumscene"
+Converted["_Cumscene"].Parent = game.Players.LocalPlayer.PlayerGui
+
+Converted["_CumFrame"].Image = "rbxassetid://12293645094"
+Converted["_CumFrame"].ImageTransparency = 1
+Converted["_CumFrame"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_CumFrame"].BackgroundTransparency = 1
+Converted["_CumFrame"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+Converted["_CumFrame"].Position = UDim2.new(-0.5, 0, -0.126505986, 0)
+Converted["_CumFrame"].Size = UDim2.new(2, 0, 1.25, 0)
+Converted["_CumFrame"].Name = "CumFrame"
+Converted["_CumFrame"].Parent = Converted["_Cumscene"]
+
+Converted["_Cum"].Font = Enum.Font.SourceSans
+Converted["_Cum"].Text = "Cum"
+Converted["_Cum"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Cum"].TextScaled = true
+Converted["_Cum"].TextSize = 14
+Converted["_Cum"].TextWrapped = true
+Converted["_Cum"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Cum"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Cum"].BorderSizePixel = 0
+Converted["_Cum"].Position = UDim2.new(0.812599659, 0, 0.469287455, 0)
+Converted["_Cum"].Size = UDim2.new(0, 200, 0, 50)
+Converted["_Cum"].Name = "Cum"
+Converted["_Cum"].Parent = Converted["_Cumscene"]
+
+Converted["_UICorner"].Parent = Converted["_Cum"]
 
 -- // male
 
@@ -760,6 +802,25 @@ coroutine.resume(coroutine.create(function()
 		sfx.Ended:Wait()
 	end
 end))
+local debounce = false
+Converted["_Cum"].MouseButton1Click:Connect(function()
+	if debounce == false then
+			debounce = true
+			Converted["_Cum"].TextColor3 = Color3.fromRGB(104, 104, 104)
+			game:GetService("TweenService"):Create(game.Workspace.CurrentCamera, TweenInfo.new(1), { FieldOfView = 50 }):Play()
+			game:GetService("TweenService"):Create(Converted["_CumFrame"], TweenInfo.new(1), { ImageTransparency = 0 }):Play()
+			local sfx = Instance.new("Sound")
+			sfx.Parent = riggy.Torso
+			sfx.Volume = 1
+			sfx.SoundId = "rbxassetid://" .. sounds.Nuts[math.random(1, #sounds.Nuts)]
+			sfx:Play()
+			task.wait(4)
+			game:GetService("TweenService"):Create(game.Workspace.CurrentCamera, TweenInfo.new(1), { FieldOfView = 70 }):Play()
+			game:GetService("TweenService"):Create(Converted["_CumFrame"], TweenInfo.new(1), { ImageTransparency = 1 }):Play()
+			Converted["_Cum"].TextColor3 = Color3.fromRGB(255,255,255)
+			debounce = false
+	end
+end)
 
 local Animator = Humanoid:FindFirstChildOfClass("Animator") or Instance.new("Animator", Humanoid)
 
