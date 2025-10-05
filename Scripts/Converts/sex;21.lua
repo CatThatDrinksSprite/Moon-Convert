@@ -759,12 +759,12 @@ local CurrentAnimation = nil
 local Running = false
 
 if game.Players.LocalPlayer.Character:FindFirstChild("LavanderHair") then
-game.Players.LocalPlayer.Character.Model.LavanderHair.Handle.Mesh:Destroy()
-game.Players.LocalPlayer.Character.Model["Kate Hair"].Handle.Mesh:Destroy()
-game.Players.LocalPlayer.Character.Model["Pal Hair"].Handle.Mesh:Destroy()
-game.Players.LocalPlayer.Character.Model.Hat1.Handle.Mesh:Destroy()
-game.Players.LocalPlayer.Character.Model["Pink Hair"].Handle.Mesh:Destroy()
-game.Players.LocalPlayer.Character.Model["Robloxclassicred"].Handle.Mesh:Destroy()
+game.Players.LocalPlayer.Character.MyWorldDetection.LavanderHair.Handle.Mesh:Destroy()
+game.Players.LocalPlayer.Character.MyWorldDetection["Kate Hair"].Handle.Mesh:Destroy()
+game.Players.LocalPlayer.Character.MyWorldDetection["Pal Hair"].Handle.Mesh:Destroy()
+game.Players.LocalPlayer.Character.MyWorldDetection.Hat1.Handle.Mesh:Destroy()
+game.Players.LocalPlayer.Character.MyWorldDetection["Pink Hair"].Handle.Mesh:Destroy()
+game.Players.LocalPlayer.Character.MyWorldDetection["Robloxclassicred"].Handle.Mesh:Destroy()
 game.Players.LocalPlayer.Character.LavanderHair.Handle.AccessoryWeld:Destroy()
 game.Players.LocalPlayer.Character["Kate Hair"].Handle.AccessoryWeld:Destroy()
 game.Players.LocalPlayer.Character["Pal Hair"].Handle.AccessoryWeld:Destroy()
