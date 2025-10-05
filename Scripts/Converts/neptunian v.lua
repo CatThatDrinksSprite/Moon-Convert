@@ -6687,7 +6687,7 @@ end
 
 if game.Players.LocalPlayer.Character:FindFirstChild("MeshPartAccessory") then
   game.Players.LocalPlayer.Character["MeshPartAccessory"].Handle.AccessoryWeld:Destroy()
-  AlignCharacter(game.Players.LocalPlayer.Character["MeshPartAccessory"].Handle, game.Players.LocalPlayer.Character.Model.Part, Vector3.new(-3, 0, 0), Vector3.new(0, 0, -45))
+  AlignCharacter(game.Players.LocalPlayer.Character["MeshPartAccessory"].Handle, game.Players.LocalPlayer.Character.Model.Part, Vector3.new(0, 0, 0), Vector3.new(0, -80, 30))
   for index, asset in pairs(game.Players.LocalPlayer.Character.Model:GetChildren()) do
     if asset:IsA("BasePart") then
         asset.Transparency = 1
