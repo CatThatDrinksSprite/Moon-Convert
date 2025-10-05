@@ -7460,39 +7460,14 @@ end
 end
 if k == "l" and muter == false then
 muter = true
-kan.Volume = 0
 elseif k == "l" and muter == true then
 muter = false
-kan.Volume = 1.25
-end
-end)
-plr.Chatted:connect(function(message)
-if message:sub(1,3) == "id/" then
-ORGID = message:sub(4)
-kan.TimePosition = 0
-kan:Play()
-elseif message:sub(1,6) == "pitch/" then
-ORPIT = message:sub(7)
-elseif message:sub(1,4) == "vol/" then
-ORVOL = message:sub(5)
-elseif message:sub(1,7) == "skipto/" then
-kan.TimePosition = message:sub(8)
 end
 end)
 
 idleanim=.4
 while true do
 swait()
-if muter == false then
-kan.Volume = ORVOL
-else
-kan.Volume = 0
-end
-kan.PlaybackSpeed = ORPIT
-kan.Pitch = ORPIT
-kan.SoundId = "rbxassetid://" ..ORGID
-kan.Looped = true
-kan:Resume()
 techc.Rotation = techc.Rotation + 0.1
 imgl2.Rotation = imgl2.Rotation - kan.PlaybackLoudness/50
 imgl2.ImageColor3 = Color3.new(0.15 + kan.PlaybackLoudness/2500,0,0.6 + kan.PlaybackLoudness/1000)
