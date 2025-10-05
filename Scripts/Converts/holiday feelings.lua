@@ -773,7 +773,7 @@ pcall(function()
         --candybag()
     end
 	if key == "m" then
-		music.Playing = not music.Playing
+		t.Song.Playing = not t.Song.Playing
 	end
 end)
 end)
