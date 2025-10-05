@@ -1588,15 +1588,7 @@ else
 	sendNotification("Moon Convert", "It is recommended to wear the hats used for this script... You can get the hats by using \"get hats;chips\"", 7)
 end
 
-for i, v in pairs(alignchar.Dummy.Dummy:GetDescendants()) do
-	if v:IsA("BasePart") then
-		v.Transparency = 1
-	end
 
-	if v:IsA("Decal") then
-		v:Destroy()
-	end
-end
 
 local sine=0
 function targett()
