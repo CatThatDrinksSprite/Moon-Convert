@@ -226,5 +226,33 @@ end
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh " .. table.concat(shuffledids, " "))
       print("-gh " .. table.concat(shuffledids, " "))
     end
-  end
+  end,
+  ["get hats;voodoo child"] = function()
+    sendNotification("Moon Convert", "Getting Hats!", 7)
+    if game.Players.LocalPlayer.Character:FindFirstChild("MyWorldDetection") then
+      sendNotification("Moon Convert", "Please get hats before reanimating", 7)
+    else
+      local function shuffleTable(t)
+    local n = #t
+    for i = n, 2, -1 do
+        local j = math.random(1, i)
+        t[i], t[j] = t[j], t[i]
+    end
+    return t
+end
+      local ids = {"7218253553", "4684948729"}
+      local shuffledids = shuffleTable(ids)
+
+      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh " .. table.concat(shuffledids, " "))
+      print("-gh " .. table.concat(shuffledids, " "))
+    end
+  end,
+  ["voodoo child"] = function()
+    sendNotification("Moon Convert", "Ran!", 7)
+    if game.Players.LocalPlayer.Character:FindFirstChild("MyWorldDetection") then
+      loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Scripts/Converts/voodoo%20child.lua", true))()
+    else
+      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
+    end
+  end,
 }
