@@ -1565,10 +1565,7 @@ function mdmg(Part, Magnitude)--, MinimumDamage, MaximumDamage, KnockBack, Type,
 	end
 end
 
---// Credits to Mizt for this AMAZING alignment script :> //--
-local alignchar = game:GetService("Players").LocalPlayer.Character
-local dollh = alignchar['Voodoo Doll Plushie']
-local knifeh = alignchar['YandereKnife']
+
 
 if game.Players.LocalPlayer.Character:FindFirstChild("Voodoo Doll Plushie") then
 	game.Players.LocalPlayer.Character["Voodoo Doll Plushie"].Handle.AccessoryWeld:Destroy()
