@@ -130,7 +130,7 @@ Converted["_UICorner4"].CornerRadius = UDim.new(0, 4)
 Converted["_UICorner4"].Parent = Converted["_Dropdown"]
 
 Converted["_Cmdbar"].FocusLost:Connect(function()
-	game:GetService("TweenService"):Create(Converted["_Cmdbar"], TweenInfo.new(0.3), { Position = UDim2.new(0.5, 0, 1.2, 0)}):Play()
+	game:GetService("TweenService"):Create(Converted["_Cmdbar"], TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), { Position = UDim2.new(0.5, 0, 1.2, 0) }):Play()
 	Converted["_Cmdbar"]:ReleaseFocus()
 	task.wait(0.3)
 	Converted["_Cmdbar"].Text = ""
@@ -151,9 +151,9 @@ userinputService.InputBegan:Connect(function(input, gameprocessedEvent)
 		if Converted["_Moon Convert"].Enabled == false then
 			Converted["_Moon Convert"].Enabled = true
 			Converted["_Cmdbar"]:CaptureFocus()
-			game:GetService("TweenService"):Create(Converted["_Cmdbar"], TweenInfo.new(0.3), { Position = UDim2.new(0.5, 0, 0.95, 0)}):Play()
+			game:GetService("TweenService"):Create(Converted["_Cmdbar"], TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), { Position = UDim2.new(0.5, 0, 0.95, 0) }):Play()
 		else
-			game:GetService("TweenService"):Create(Converted["_Cmdbar"], TweenInfo.new(0.3), { Position = UDim2.new(0.5, 0, 1.2, 0)}):Play()
+			game:GetService("TweenService"):Create(Converted["_Cmdbar"], TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), { Position = UDim2.new(0.5, 0, 1.2, 0) }):Play()
 			Converted["_Cmdbar"]:ReleaseFocus()
 			task.wait(0.3)
 			Converted["_Cmdbar"].Text = ""
