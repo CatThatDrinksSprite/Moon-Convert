@@ -742,7 +742,7 @@ local RunService = game:GetService("RunService")
 local CurrentAnimation = nil
 local Running = false
 
-if game.Players.LocalPlayer.Character:FindFirstChild("LavanderHair") then
+if game.Players.LocalPlayer.Character:FindFirstChild("LavanderHair") and game.Players.LocalPlayer.Character:FindFirstChild("Kate Hair") and game.Players.LocalPlayer.Character:FindFirstChild("Pal Hair") and game.Players.LocalPlayer.Character:FindFirstChild("Hat1") and game.Players.LocalPlayer.Character:FindFirstChild("Pink Hair") and game.Players.LocalPlayer:FindFirstChild("Robloxclassicred") then
 game.Players.LocalPlayer.Character.MyWorldDetection.LavanderHair.Handle.Mesh:Destroy()
 game.Players.LocalPlayer.Character.MyWorldDetection["Kate Hair"].Handle.Mesh:Destroy()
 game.Players.LocalPlayer.Character.MyWorldDetection["Pal Hair"].Handle.Mesh:Destroy()
