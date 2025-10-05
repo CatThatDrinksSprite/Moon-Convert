@@ -14,7 +14,7 @@ local Converted = {
 	["_UICorner"] = Instance.new("UICorner");
 }
 
--- Properties:
+
 
 Converted["_Cumscene"].IgnoreGuiInset = true
 Converted["_Cumscene"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
