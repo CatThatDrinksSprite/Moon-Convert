@@ -8,7 +8,7 @@ F - Place a gift
 C - TP
 Z - Sit
 M - Mute
-R - Candy bag]])
+N - Unmute]])
 local plr = game:GetService("Players").LocalPlayer
 local plrg = plr.PlayerGui
 local mouse = plr:GetMouse()
@@ -771,13 +771,13 @@ pcall(function()
         tp()
     end
     if key == "r"and not using then
-        candybag()
+        --candybag()
     end
 	if key == "m" then
-		music.Volume = 0
+		music:Stop()
 	end
 	if key == "n" then
-		music.Volume = 1
+		music:Play()
 	end
 end)
 end)
