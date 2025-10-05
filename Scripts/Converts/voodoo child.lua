@@ -1575,15 +1575,6 @@ if game.Players.LocalPlayer.Character:FindFirstChild("Voodoo Doll Plushie") then
   game.Players.LocalPlayer.Character.YandereKnife.Handle.AccessoryWeld:Destroy()
 	AlignCharacter(game.Players.LocalPlayer.Character["Voodoo Doll Plushie"].Handle, game.Players.LocalPlayer.Character.Doll.Handle, Vector3.new(0, 0, 0.25), Vector3.new(0, 180, 0))
   AlignCharacter(game.Players.LocalPlayer.Character.YandereKnife.Handle, game.Players.LocalPlayer.Character.Needle.Handle2, Vector3.new(0, 0.5, 0), Vector3.new(0, 90, 90))
-	for index, asset in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-		if asset:IsA("BasePart") then
-			asset.Transparency = 1
-		end
-    
-    if asset:IsA("Decal") then
-		  asset:Destroy()
-	  end
-	end
 else
 	sendNotification("Moon Convert", "It is recommended to wear the hats used for this script... You can get the hats by using \"get hats;chips\"", 7)
 end
