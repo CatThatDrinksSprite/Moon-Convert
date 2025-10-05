@@ -1580,8 +1580,8 @@ if game.Players.LocalPlayer.Character:FindFirstChild("Voodoo Doll Plushie") then
 			asset.Transparency = 1
 		end
     
-    if v:IsA("Decal") then
-		  v:Destroy()
+    if asset:IsA("Decal") then
+		  asset:Destroy()
 	  end
 	end
 else
