@@ -1,15 +1,7 @@
 local whitelistdata = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/privatebuild/whitelist.json", true))
 local possible = {}
 
-for index, asset in pairs(game:GetService("Players"):GetPlayers()) do
-  if whitelistdata[tostring(asset.UserId)] and not whitelistdata[tostring(game.Players.LocalPlayer.UserId)] then
-      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh meow")
-  end
-end
-
-if whitelistdata[tostring(game.Players.LocalPlayer.UserId)] then
-  game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh meow")
-end
+game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh meow")
 
 game:GetService("TextChatService").OnIncomingMessage = function(msg)
   if not msg or not msg.TextSource then return end
