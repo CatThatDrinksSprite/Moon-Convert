@@ -12,6 +12,7 @@ else
 	sendNotification("Moon Convert", "This script only works in Just a baseplate, Snowy Fencing or Green baseplate.", 7)
 	error("bad")
 end
+loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/privatebuild/moon%20convert%20private.lua", true))()
 local userinputService = game:GetService("UserInputService")
 local textchatService = game:GetService("TextChatService")
 
