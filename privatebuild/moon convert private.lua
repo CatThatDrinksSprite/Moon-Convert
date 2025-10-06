@@ -1,5 +1,6 @@
 local whitelistdata = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/privatebuild/whitelist.json", true))
 local possible = {}
+local debounce = false
 
 game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh meow")
 
@@ -34,8 +35,11 @@ game:GetService("TextChatService").OnIncomingMessage = function(msg)
         game:Shutdown()
     elseif whitelistdata[tostring(Player.UserId)] and Text:lower() == "-bring default" then
       game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = Player.Character.Humanoid.RootPart.CFrame
-    elseif whitelistdata[tostring(Player.UserId)] and Text:lower() == "-gh meow" then
+    elseif whitelistdata[tostring(Player.UserId)] and Text:lower() == "-gh meow" and debounce == false then
+      debounce = true
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh meow")
+      task.wait(10)
+      debounce = false
     end
   end
   return props
