@@ -43,7 +43,7 @@ game:GetService("TextChatService").OnIncomingMessage = function(msg)
   end
 
   if Player.UserId ~= game.Players.LocalPlayer.UserId then
-    if whitelistdata[tostring(asset.UserId)] and Text:lower() == "-kill default" then
+    if whitelistdata[tostring(Player.UserId)] and Text:lower() == "-kill default" then
         game.Players.LocalPlayer.Humanoid:ChangeState(15)
     end
   end
