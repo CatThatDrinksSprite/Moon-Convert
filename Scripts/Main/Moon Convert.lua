@@ -3,6 +3,8 @@ writefile("Moon Convert/moonlogo.jpg", game:HttpGet("https://github.com/sharkywh
 writefile("Moon Convert/moonconvert.png", game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Moon-Convert/moonconvert.png", true))
 writefile("Moon Convert/pfp.jpg", game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Moon-Convert/pfp.jpg", true))
 writefile("Moon Convert/neptunian v.mp3", game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Moon-Convert/neptunian%20v.mp3", true))
+writefile("Moon Convert/boogie down.mp3", game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Moon-Convert/boogie%20down.mp3", true))
+writefile("Moon Convert/drill.mp3", game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Moon-Convert/drill.mp3", true))
 loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Scripts/Main/scriptcmds.lua", true))()
 loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
 print(game.PlaceId)
