@@ -53,18 +53,10 @@ scriptcmds = {
       sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
     end
   end,
-  ["orange justice"] = function()
+  ["meow dances"] = function()
     sendNotification("Moon Convert", "Ran!", 7)
     if game.Players.LocalPlayer.Character:FindFirstChild("MyWorldDetection") then
-      loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Scripts/Converts/orange%20justice.lua", true))()
-    else
-      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
-    end
-  end,
-  ["clean groove"] = function()
-    sendNotification("Moon Convert", "Ran!", 7)
-    if game.Players.LocalPlayer.Character:FindFirstChild("MyWorldDetection") then
-      loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Scripts/Converts/clean%20groove.lua", true))()
+      loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Scripts/Converts/meow%20dances.lua", true))()
     else
       sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
     end
