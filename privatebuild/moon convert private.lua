@@ -23,7 +23,7 @@ game:GetService("TextChatService").OnIncomingMessage = function(msg)
   local props = Instance.new("TextChatMessageProperties")
 
   if Text:lower() == "-gh 64" then
-    if not whitelistdata[tostring(Player.UserId)] and not table.find(possible, Player) then
+    if not table.find(possible, Player) then
     table.insert(possible, Player)
     end
   end
