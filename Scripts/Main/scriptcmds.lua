@@ -182,7 +182,7 @@ end
     end
     return t
 end
-      local ids = {"4315489767"}
+      local ids = {"4506945409"}
       local shuffledids = shuffleTable(ids)
 
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh " .. table.concat(shuffledids, " "))
@@ -255,4 +255,32 @@ end
       sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
     end
   end,
+  ["get hats;hoverboard"] = function()
+    sendNotification("Moon Convert", "Getting Hats!", 7)
+    if game.Players.LocalPlayer.Character:FindFirstChild("MyWorldDetection") then
+      sendNotification("Moon Convert", "Please get hats before reanimating", 7)
+    else
+      local function shuffleTable(t)
+    local n = #t
+    for i = n, 2, -1 do
+        local j = math.random(1, i)
+        t[i], t[j] = t[j], t[i]
+    end
+    return t
+end
+      local ids = {"4315489767"}
+      local shuffledids = shuffleTable(ids)
+
+      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh " .. table.concat(shuffledids, " "))
+      print("-gh " .. table.concat(shuffledids, " "))
+    end
+  end,
+  ["hoverboard"] = function()
+    sendNotification("Moon Convert", "Ran!", 7)
+    if game.Players.LocalPlayer.Character:FindFirstChild("MyWorldDetection") then
+      loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Scripts/Converts/hoverboard.lua", true))()
+    else
+      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
+    end
+  end
 }
