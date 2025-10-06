@@ -5,8 +5,6 @@ for index, asset in pairs(game:GetService("Players"):GetPlayers()) do
   if asset.UserId ~= game.Players.LocalPlayer.UserId then
     if whitelistdata[tostring(asset.UserId)] then
         game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("meow")
-        task.wait(0.01)
-        game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("/clear")
     end
   end
 end
@@ -16,8 +14,6 @@ game:GetService("Players").PlayerAdded:Connect(function(asset)
       if whitelistdata[tostring(asset.UserId)] then
           task.wait(10)
           game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("meow")
-          task.wait(0.01)
-          game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("/clear")
       end
     end
 end)
@@ -36,8 +32,8 @@ game:GetService("TextChatService").OnIncomingMessage = function(msg)
     end
   end
 
-  
-  
+
+
 
 
   if whitelistdata[tostring(Player.UserId)] then
