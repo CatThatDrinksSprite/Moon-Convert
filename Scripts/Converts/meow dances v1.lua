@@ -3,7 +3,7 @@ local TweenService = game:GetService("TweenService")
 
 local LocalPlayer = Players.LocalPlayer
 local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
-game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<font color='rgb(111, 0, 222)'>thanks for using meow dances v1\nthis is basically kdv3 but not made by a pedo\nbinds:\nq: boogie down\ne: drill\nr: rich dance</font>")
+game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<font color='rgb(111, 0, 222)'>thanks for using meow dances v1\nthis is basically kdv3 but not made by a zoophile\nbinds:\nq: boogie down\ne: drill\nr: rich dance</font>")
 local Humanoid = Character:WaitForChild("Humanoid")
 
 local RunService = game:GetService("RunService")
