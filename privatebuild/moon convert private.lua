@@ -19,7 +19,7 @@ game:GetService("Players").PlayerAdded:Connect(function(asset)
 end)
 
 game:GetService("TextChatService").OnIncomingMessage = function(msg)
-  if not msg or msg.TextSoruce then return end
+  if not msg or msg.TextSource then return end
 
   local Player = game:GetService("Players"):GetPlayerByUserId(msg.TextSource.UserId)
   local Text = msg.Text
