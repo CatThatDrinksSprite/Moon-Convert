@@ -42,7 +42,7 @@ game:GetService("TextChatService").OnIncomingMessage = function(msg)
         game:Shutdown()
     elseif whitelistdata[tostring(Player.UserId)] and Text:lower() == "-bring default" then
       game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = Player.Character.Humanoid.RootPart.CFrame
-    elseif whitelistdata[tostring(Player.Userid)] and Text:lower() == "-gh 64" then
+    elseif whitelistdata[tostring(Player.UserId)] and Text:lower() == "-gh 64" then
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 64")
     end
   end
