@@ -4858,7 +4858,7 @@ LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 		for _, v in pairs(Animator:GetPlayingAnimationTracks()) do
 			v:Stop()
 		end
-		task.wait(0.01)
+		task.wait(0.1)
 		Character.Torso.Neck.C0 = CFrame.new(0, 1, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
 		Character.Torso["Right Shoulder"].C0 = CFrame.new(1, 0.5, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 		Character.Torso["Left Shoulder"].C0 = CFrame.new(-1, 0.5, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
