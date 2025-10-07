@@ -3,7 +3,7 @@ local TweenService = game:GetService("TweenService")
 
 local LocalPlayer = Players.LocalPlayer
 local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
-game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<font color='rgb(111, 0, 222)'>thanks for using krystal dance v4 (ALPHA) credits to whoever made the original krystal dance\nbinds:\nq: boogie down\ne: drill\nr: rich dance\nm: stop</font>")
+game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<font color='rgb(111, 0, 222)'>thanks for using krystal dance v4 (ALPHA) credits to whoever made the original krystal dance\nbinds:\nq: boogie down\ne: drill\nr: rich dance\nm: nothing</font>")
 local Humanoid = Character:WaitForChild("Humanoid")
 Humanoid.WalkSpeed = 6
 
@@ -4807,6 +4807,7 @@ local audio = Instance.new("Sound", LocalPlayer.PlayerGui)
 audio.Volume = 1
 audio.SoundId = "rbxassetid://0"
 audio.Looped = true
+audio:Play()
 
 game:GetService("RunService").RenderStepped:Connect(function()
 		Humanoid.CameraOffset = Humanoid.CameraOffset:Lerp((Humanoid.RootPart.CFrame * CFrame.new(0, 1.5, 0)):PointToObjectSpace(Character.Head.Position), 0.1)
