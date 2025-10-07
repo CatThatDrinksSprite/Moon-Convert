@@ -4852,10 +4852,10 @@ LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 		game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<font color='rgb(111, 0, 222)'>now playing: nothing</font>")
 		Character.Animate.Enabled = true
 		Humanoid.WalkSpeed = 16
-		Character.Torso.Neck.C0.CFrame = CFrame.new(0, 1, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
-		Character.Torso["Right Shoulder"].C0.CFrame = CFrame.new(1, 0.5, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
-		Character.Torso["Left Shoulder"].C0.CFrame = CFrame.new(-1, 0.5, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
-		Character.Torso["Right Hip"].C0.CFrame = CFrame.new(1, -1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
-		Character.Torso["Left Hip"].C0.CFrame = CFrame.new(-1, -1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+		Character.Torso.Neck.C0 = CFrame.new(0, 1, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
+		Character.Torso["Right Shoulder"].C0 = CFrame.new(1, 0.5, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+		Character.Torso["Left Shoulder"].C0 = CFrame.new(-1, 0.5, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+		Character.Torso["Right Hip"].C0 = CFrame.new(1, -1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+		Character.Torso["Left Hip"].C0 = CFrame.new(-1, -1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
 	end
 end)
