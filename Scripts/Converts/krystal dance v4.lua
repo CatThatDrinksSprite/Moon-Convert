@@ -4807,13 +4807,7 @@ audio.Volume = 1
 audio.SoundId = "rbxassetid://0"
 audio.Looped = true
 audio:Play()
-audio.SoundId = getcustomasset("Moon Convert/boogie down.mp3")
-audio:Play()
-StopAllAnimations()
-game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<font color='rgb(111, 0, 222)'>now playing: boogie down</font>")
-PlayAnimation("Boogie Down", BoogieDown)
-Character.Animate.Enabled = false
-Humanoid.WalkSpeed = 6
+game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<font color='rgb(111, 0, 222)'>now playing: nothing</font>")
 
 game:GetService("RunService").RenderStepped:Connect(function()
 		Humanoid.CameraOffset = Humanoid.CameraOffset:Lerp((Humanoid.RootPart.CFrame * CFrame.new(0, 1.5, 0)):PointToObjectSpace(Character.Head.Position), 0.1)
@@ -4861,14 +4855,15 @@ LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 		game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<font color='rgb(111, 0, 222)'>now playing: nothing</font>")
 		Character.Animate.Enabled = true
 		Humanoid.WalkSpeed = 16
+		for _, v in pairs(Animator:GetPlayingAnimationTracks()) do
+			v:Stop()
+		end
+		task.wait(0.01)
 		Character.Torso.Neck.C0 = CFrame.new(0, 1, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
 		Character.Torso["Right Shoulder"].C0 = CFrame.new(1, 0.5, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 		Character.Torso["Left Shoulder"].C0 = CFrame.new(-1, 0.5, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
 		Character.Torso["Right Hip"].C0 = CFrame.new(1, -1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 		Character.Torso["Left Hip"].C0 = CFrame.new(-1, -1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
 		Humanoid.RootPart.RootJoint.C0 = CFrame.new(0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
-		for _, v in pairs(Animator:GetPlayingAnimationTracks()) do
-			v:Stop()
-		end
 	end
 end)
