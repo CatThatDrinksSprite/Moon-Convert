@@ -4829,6 +4829,9 @@ LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 			PlayAnimation("Boogie Down", BoogieDown)
 			Character.Animate.Enabled = false
 			Humanoid.WalkSpeed = 6
+			for _, v in pairs(Animator:GetPlayingAnimationTracks()) do
+				v:Stop()
+			end
 		elseif key == "e" then
 			audio.SoundId = getcustomasset("Moon Convert/drill.mp3")
 			audio:Play()
@@ -4837,6 +4840,9 @@ LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 			PlayAnimation("Drill", Drill)
 			Character.Animate.Enabled = false
 			Humanoid.WalkSpeed = 6
+			for _, v in pairs(Animator:GetPlayingAnimationTracks()) do
+				v:Stop()
+			end
 		elseif key == "r" then
 			audio.SoundId = "rbxassetid://0"
 			audio:Play()
@@ -4845,6 +4851,9 @@ LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 			PlayAnimation("Rich Dance", RichDance)
 			Character.Animate.Enabled = false
 			Humanoid.WalkSpeed = 6
+			for _, v in pairs(Animator:GetPlayingAnimationTracks()) do
+				v:Stop()
+			end
 	elseif key == "m" then
 		audio.SoundId = "rbxassetid://0"
 		audio:Play()
@@ -4857,5 +4866,9 @@ LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 		Character.Torso["Left Shoulder"].C0 = CFrame.new(-1, 0.5, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
 		Character.Torso["Right Hip"].C0 = CFrame.new(1, -1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 		Character.Torso["Left Hip"].C0 = CFrame.new(-1, -1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+		Humanoid.RootPart.RootJoint.C0 = CFrame.new(0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
+		for _, v in pairs(Animator:GetPlayingAnimationTracks()) do
+			v:Stop()
+		end
 	end
 end)
