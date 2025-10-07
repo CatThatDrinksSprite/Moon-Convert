@@ -4820,7 +4820,7 @@ game:GetService("RunService").RenderStepped:Connect(function()
 		Humanoid.CameraOffset = Humanoid.CameraOffset:Lerp((Humanoid.RootPart.CFrame * CFrame.new(0, 1.5, 0)):PointToObjectSpace(Character.Head.Position), 0.1)
 end)
 
-game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<font color='rgb(111, 0, 222)'>now playing: nothing</font>")
+
 LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 	if key == "q" then
 			audio.SoundId = getcustomasset("Moon Convert/boogie down.mp3")
