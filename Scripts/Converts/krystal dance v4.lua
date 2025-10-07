@@ -12,7 +12,7 @@ local RunService = game:GetService("RunService")
 local CurrentAnimation = nil
 local Running = false
 
-Character.Animate.Enabled = false
+
 
 local Animator = Humanoid:FindFirstChildOfClass("Animator") or Instance.new("Animator", Humanoid)
 
@@ -4805,16 +4805,14 @@ local RichDance = {
 
 local audio = Instance.new("Sound", LocalPlayer.PlayerGui)
 audio.Volume = 1
-audio.SoundId = getcustomasset("Moon Convert/boogie down.mp3")
+audio.SoundId = "rbxassetid://0"
 audio.Looped = true
-audio:Play()
 
 game:GetService("RunService").RenderStepped:Connect(function()
 		Humanoid.CameraOffset = Humanoid.CameraOffset:Lerp((Humanoid.RootPart.CFrame * CFrame.new(0, 1.5, 0)):PointToObjectSpace(Character.Head.Position), 0.1)
 end)
 
-game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<font color='rgb(111, 0, 222)'>now playing: boogie down</font>")
-PlayAnimation("Boogie Down", BoogieDown)
+game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<font color='rgb(111, 0, 222)'>now playing: nothing</font>")
 LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 	if key == "q" then
 			audio.SoundId = getcustomasset("Moon Convert/boogie down.mp3")
@@ -4822,17 +4820,26 @@ LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 			StopAllAnimations()
 			game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<font color='rgb(111, 0, 222)'>now playing: boogie down</font>")
 			PlayAnimation("Boogie Down", BoogieDown)
+			Character.Animate.Enabled = false
 		elseif key == "e" then
 			audio.SoundId = getcustomasset("Moon Convert/drill.mp3")
 			audio:Play()
 			StopAllAnimations()
 			game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<font color='rgb(111, 0, 222)'>now playing: drill</font>")
 			PlayAnimation("Drill", Drill)
+			Character.Animate.Enabled = false
 		elseif key == "r" then
 			audio.SoundId = "rbxassetid://0"
 			audio:Play()
 			StopAllAnimations()
 			game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<font color='rgb(111, 0, 222)'>now playing: rich dance</font>")
 			PlayAnimation("Rich Dance", RichDance)
+			Character.Animate.Enabled = false
+	elseif key == "m" then
+		audio.SoundId = "rbxassetid://0"
+		audio:Play()
+		StopAllAnimations()
+		game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<font color='rgb(111, 0, 222)'>now playing: nothing</font>")
+		Character.Animate.Enabled = true
 	end
 end)
