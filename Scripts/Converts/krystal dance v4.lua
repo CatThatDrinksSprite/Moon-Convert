@@ -15,9 +15,7 @@ local Running = false
 
 local Animator = Humanoid:FindFirstChildOfClass("Animator") or Instance.new("Animator", Humanoid)
 
-for _, v in pairs(Animator:GetPlayingAnimationTracks()) do
-	v:Stop()
-end
+
 
 local Motor6DMap = {
     ["Head"] = "Neck",
@@ -4807,7 +4805,16 @@ audio.Volume = 1
 audio.SoundId = "rbxassetid://0"
 audio.Looped = true
 audio:Play()
-game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<font color='rgb(111, 0, 222)'>now playing: nothing</font>")
+audio.SoundId = getcustomasset("Moon Convert/boogie down.mp3")
+audio:Play()
+StopAllAnimations()
+game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<font color='rgb(111, 0, 222)'>now playing: boogie down</font>")
+PlayAnimation("Boogie Down", BoogieDown)
+Character.Animate.Enabled = false
+Humanoid.WalkSpeed = 6
+for _, v in pairs(Animator:GetPlayingAnimationTracks()) do
+	v:Stop()
+end
 
 game:GetService("RunService").RenderStepped:Connect(function()
 		Humanoid.CameraOffset = Humanoid.CameraOffset:Lerp((Humanoid.RootPart.CFrame * CFrame.new(0, 1.5, 0)):PointToObjectSpace(Character.Head.Position), 0.1)
