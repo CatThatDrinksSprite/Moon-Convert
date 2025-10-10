@@ -1,4 +1,4 @@
-# MOON CONVERT | An opensource script for just a baseplate/green baseplate/snowy fencing, That has Require scripts turned into FE Scripts. We also have some of our own scripts!
+# MOON CONVERT | An opensource script for just a baseplate/green baseplate/spooky fencing, That has Require scripts turned into FE Scripts. We also have some of our own scripts!
 
 ![moonconvert](https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Moon-Convert/moonconvert.png)
 
