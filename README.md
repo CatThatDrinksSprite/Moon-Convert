@@ -14,10 +14,10 @@ loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/
 
 ## // CREDITS //
 
-sharkywhiskers - made this script
+sharkywhiskers - made this script, krystal dance v4 command and sex command
 
-veser - made the animation to cframe plugin for krystal dance v4 and sex + awesome
+veser - made the animation to cframe plugin for krystal dance v4 command and sex command + awesome
 
 whoever made the original fd/require scripts
 
-i forgot his name - made the reanimate
+myworld - made the reanimate
