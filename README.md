@@ -1,6 +1,6 @@
 # MOON CONVERT | An opensource script for just a baseplate/green baseplate/spooky fencing, That has Require scripts turned into FE Scripts. We also have some of our own scripts!
 
-![moonconvert](https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Moon-Convert/moonconvert.png)
+![moonconvert](https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Moon-Convert/moonconvert.png)
 
 ## // QUICK LINKS //
 
@@ -9,12 +9,12 @@
 # What are you waiting for? Use it now!
 
 ```lua
-loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Scripts/Main/Moon%20Convert.lua", true))()
+loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Main/Moon%20Convert.lua", true))()
 ```
 
 ## // CREDITS //
 
-sharkywhiskers - made this script, krystal dance v4 command and sex command
+CatThatDrinksSprite - made this script, krystal dance v4 command and sex command
 
 veser - made the animation to cframe plugin for krystal dance v4 command and sex command + awesome
 
