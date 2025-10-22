@@ -1,6 +1,6 @@
-loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Scripts/Other/LoadLibrary.lua", true))()
-loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Scripts/Other/AlignCharacter.lua", true))()
-loadstring(game:HttpGet("https://github.com/sharkywhiskersmeow/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
+loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/LoadLibrary.lua", true))()
+loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/AlignCharacter.lua", true))()
+loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
 
 --- Did actually rework heavily away from original neptunian, and the non-rework neptunian. -- NoobyGames12
 --- Was supposed to be for the770zone, or VengefulProgram.
