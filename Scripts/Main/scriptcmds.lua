@@ -274,5 +274,9 @@ end
     else
       sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
     end
+  end,
+  ["discord"] = function()
+    setclipboard([[discord.gg/DPBtncwaEm]])
+    sendNotification("Moon Convert", "Set clipboard to discord link", 7)
   end
 }
