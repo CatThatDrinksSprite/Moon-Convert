@@ -137,9 +137,6 @@ Effects = {}
 -------------------------------------------------------
 --Start HeartBeat--
 -------------------------------------------------------
-ArtificialHB = Instance.new("BindableEvent", script)
-ArtificialHB.Name = "Heartbeat"
-
 frame = 1 / 60
 tf = 0
 allowframeloss = false
