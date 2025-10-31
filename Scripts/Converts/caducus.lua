@@ -276,7 +276,7 @@ end)
 
 function swait(num)
 	if num == 0 or num == nil then
-		ArtificialHB.Event:Wait()
+		ArtificialHB.Event:wait()
 	else
 		for i = 0, num do
 			ArtificialHB.Event:wait()
