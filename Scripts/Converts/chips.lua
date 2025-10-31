@@ -88,25 +88,28 @@ rl.Weld.C1 = CFrame.new(0, 1, 0)
 -------------------------------------------------------
 --Start HeartBeat--
 -------------------------------------------------------
-ArtificialHB = Instance.new("BindableEvent", script)
+ArtificialHB = Instance.new("BindableEvent", plr)
 ArtificialHB.Name = "Heartbeat"
+
+plr:WaitForChild("Heartbeat")
 
 frame = 1 / 60
 tf = 0
 allowframeloss = false
 tossremainder = false
 
-
 lastframe = tick()
-
+plr.Heartbeat:Fire()
 
 game:GetService("RunService").Heartbeat:connect(function(s, p)
 	tf = tf + s
 	if tf >= frame then
 		if allowframeloss then
+				plr.Heartbeat:Fire()
 			lastframe = tick()
 		else
 			for i = 1, math.floor(tf / frame) do
+					plr.Heartbeat:Fire()
 			end
 			lastframe = tick()
 		end
