@@ -1349,27 +1349,27 @@ local bg=Instance.new("BodyGyro")
  
 --// Artificial HB \\--
  
-local ArtificialHB = Instance.new("BindableEvent", script)
+local ArtificialHB = Instance.new("BindableEvent", plr)
 ArtificialHB.Name = "Heartbeat"
  
-
+plr:WaitForChild("Heartbeat")
  
 local tf = 0
 local allowframeloss = false
 local tossremainder = false
 local lastframe = tick()
 local frame = 1/60
-ArtificialHB:Fire()
+plr.Heartbeat:Fire()
  
 game:GetService("RunService").Heartbeat:connect(function(s, p)
     tf = tf + s
     if tf >= frame then
         if allowframeloss then
-            script.Heartbeat:Fire()
+            plr.Heartbeat:Fire()
             lastframe = tick()
         else
             for i = 1, math.floor(tf / frame) do
-                ArtificialHB:Fire()
+                plr.Heartbeat:Fire()
             end
             lastframe = tick()
         end
