@@ -117,9 +117,9 @@ Effects = {}
 -------------------------------------------------------
 --Start HeartBeat--
 -------------------------------------------------------
-ArtificialHB = Instance.new("BindableEvent", script)
+ArtificialHB = Instance.new("BindableEvent", Player)
 ArtificialHB.Name = "Heartbeat"
-
+Player:WaitForChild("Heartbeat")
 frame = 1 / 60
 tf = 0
 allowframeloss = false
@@ -127,15 +127,17 @@ tossremainder = false
 
 
 lastframe = tick()
-
+Player.Heartbeat:Fire()
 
 game:GetService("RunService").Heartbeat:connect(function(s, p)
 	tf = tf + s
 	if tf >= frame then
 		if allowframeloss then
+				Player.Heartbeat:Fire()
 			lastframe = tick()
 		else
 			for i = 1, math.floor(tf / frame) do
+					Player.Heartbeat:Fire()
 			end
 			lastframe = tick()
 		end
