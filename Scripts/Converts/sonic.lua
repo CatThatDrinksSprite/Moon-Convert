@@ -184,9 +184,9 @@ print("Space near a wall to walljump, away from a wall homing attack")
 		        return weldd
 		    end
 		   
-		    ArtificialHB = Instance.new("BindableEvent", script)
+		    ArtificialHB = Instance.new("BindableEvent", Player)
 		ArtificialHB.Name = "Heartbeat"
-		 
+		 Player:WaitForChild("Heartbeat")
 		frame = 1 / 80
 		tf = 0
 		allowframeloss = false
@@ -196,9 +196,11 @@ print("Space near a wall to walljump, away from a wall homing attack")
 		    tf = tf + s
 		    if tf >= frame then
 		        if allowframeloss then
+				Player.Heartbeat:Fire()
 		            lastframe = tick()
 		        else
 		            for i = 1, math.floor(tf / frame) do
+					Player.Heartbeat:Fire()
 		            end
 		            lastframe = tick()
 		        end
