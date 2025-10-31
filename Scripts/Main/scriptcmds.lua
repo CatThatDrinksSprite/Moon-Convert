@@ -282,7 +282,7 @@ end
   ["caducus"] = function()
     sendNotification("Moon Convert", "Ran!", 7)
     if game.Players.LocalPlayer.Character:FindFirstChild("MyWorldDetection") then
-      loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/blob/main/Scripts/Converts/caducus.lua", true))()
+      loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Converts/caducus.lua", true))()
     else
       sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
     end
