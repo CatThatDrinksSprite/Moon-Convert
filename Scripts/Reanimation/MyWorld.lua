@@ -23,7 +23,7 @@ local method = 3 --reanimation method
 --3 - limbs + breakJoints after [loadtime] seconds
 --4 - remove humanoid + breakJoints
 --5 - remove humanoid + limbs
-local alignmode = 1 --AlignPosition mode
+local alignmode = 4 --AlignPosition mode
 --modes:
 --1 - AlignPosition rigidity enabled true
 --2 - 2 AlignPositions rigidity enabled both true and false
