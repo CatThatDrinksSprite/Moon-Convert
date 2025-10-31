@@ -84,24 +84,25 @@ local SC = false
 --|| SAZERENOS' ARTIFICIAL HEARTBEAT
 --\\=================================//
 
-ArtificialHB = Instance.new("BindableEvent", script)
+ArtificialHB = Instance.new("BindableEvent", Player)
 ArtificialHB.Name = "ArtificialHB"
-
+Player:WaitForChild("ArtificialHB")
 frame = Frame_Speed
 tf = 0
 allowframeloss = false
 tossremainder = false
 lastframe = tick()
+Player.ArtificialHB:Fire()
 
 game:GetService("RunService").Heartbeat:connect(function(s, p)
 	tf = tf + s
 	if tf >= frame then
 		if allowframeloss then
-			ArtificialHB:Fire()
+			Player.ArtificialHB:Fire()
 			lastframe = tick()
 		else
 			for i = 1, math.floor(tf / frame) do
-				ArtificialHB:Fire()
+				Player.ArtificialHB:Fire()
 			end
 			lastframe = tick()
 		end
