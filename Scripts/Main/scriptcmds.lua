@@ -276,7 +276,7 @@ end
     end
   end,
   ["discord"] = function()
-    setclipboard([[discord.gg/DPBtncwaEm]])
+    setclipboard([[discordapp.com/invite/DPBtncwaEm]])
     sendNotification("Moon Convert", "Set clipboard to discord link", 7)
   end,
   ["caducus"] = function()
