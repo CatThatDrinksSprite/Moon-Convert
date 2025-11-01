@@ -6,8 +6,7 @@ warn([[E - Hug
 Q - Throw snowbal
 F - Place a gift
 C - TP
-Z - Sit
-M - Mute toggle]])
+Z - Sit]])
 local plr = game:GetService("Players").LocalPlayer
 local plrg = plr.PlayerGui
 local mouse = plr:GetMouse()
@@ -772,9 +771,6 @@ pcall(function()
     if key == "r"and not using then
         --candybag()
     end
-	if key == "m" then
-		t.Song.Playing = not t.Song.Playing
-	end
 end)
 end)
 mouse.Button1Down:Connect(function()
