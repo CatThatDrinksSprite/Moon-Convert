@@ -87,7 +87,7 @@ end
 
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh " .. table.concat(shuffledids, " "))
       print("-gh " .. table.concat(shuffledids, " ")) ]]--
-      sendNotification("Moon Convert", "This command is patched maybe there will be a fix")
+      sendNotification("Moon Convert", "This command is locked.", 7)
     end
   end,
   ["get hats;shopping cart"] = function()
