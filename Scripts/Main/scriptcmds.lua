@@ -74,7 +74,7 @@ scriptcmds = {
     if game.Players.LocalPlayer.Character:FindFirstChild("MyWorldDetection") then
       sendNotification("Moon Convert", "Please get hats before reanimating", 7)
     else
-      local function shuffleTable(t)
+      --[[ local function shuffleTable(t)
     local n = #t
     for i = n, 2, -1 do
         local j = math.random(1, i)
@@ -86,7 +86,8 @@ end
       local shuffledids = shuffleTable(ids)
 
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh " .. table.concat(shuffledids, " "))
-      print("-gh " .. table.concat(shuffledids, " "))
+      print("-gh " .. table.concat(shuffledids, " ")) ]]--
+      sendNotification("Moon Convert", "This command is patched maybe there will be a fix")
     end
   end,
   ["get hats;shopping cart"] = function()
