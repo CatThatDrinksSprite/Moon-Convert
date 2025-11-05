@@ -21,3 +21,5 @@ veser - made the animation to cframe plugin for krystal dance v4 command and sex
 whoever made the original fd/require scripts
 
 myworld - made the reanimate
+
+emper - helped me convert some stuff
