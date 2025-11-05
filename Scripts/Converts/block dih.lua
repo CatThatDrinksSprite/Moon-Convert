@@ -1,6 +1,6 @@
 loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
 loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/AlignCharacter.lua", true))()
-if game.Players.LocalPlayer:FindFirstChild("MeshPartAccessory") then
+if game.Players.LocalPlayer.Character:FindFirstChild("MeshPartAccessory") then
   local e1 = game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory")
 e1.Name = "e1"
 local e2 = game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory")
