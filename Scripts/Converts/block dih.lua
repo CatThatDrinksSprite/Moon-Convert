@@ -10,7 +10,7 @@ game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "gam
 game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "game.Players.LocalPlayer.Character.e7"
 game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "game.Players.LocalPlayer.Character.e8"
 game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "game.Players.LocalPlayer.Character.e9"
-game.Players.LocalPlayer.Character.Handle.e1.AccessoryWeld:Destroy()
+game.Players.LocalPlayer.Character.e1.Handle.AccessoryWeld:Destroy()
 game.Players.LocalPlayer.Character.e2.Handle.AccessoryWeld:Destroy()
 game.Players.LocalPlayer.Character.e3.Handle.AccessoryWeld:Destroy()
 game.Players.LocalPlayer.Character.e4.Handle.AccessoryWeld:Destroy()
