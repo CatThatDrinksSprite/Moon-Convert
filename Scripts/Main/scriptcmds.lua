@@ -323,5 +323,33 @@ end
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh " .. table.concat(shuffledids, " "))
       print("-gh " .. table.concat(shuffledids, " "))
     end
-  end
+  end,
+  ["get hats;asterazuke glitcher"] = function()
+    sendNotification("Moon Convert", "Getting Hats!", 7)
+    if game.Players.LocalPlayer.Character:FindFirstChild("MyWorldDetection") then
+      sendNotification("Moon Convert", "Please get hats before reanimating", 7)
+    else
+      local function shuffleTable(t)
+    local n = #t
+    for i = n, 2, -1 do
+        local j = math.random(1, i)
+        t[i], t[j] = t[j], t[i]
+    end
+    return t
+end
+      local ids = {"5268555719", "5268602207", "5316479641", "5316549755", "5316539421", "5268710380", "6904794619"}
+      local shuffledids = shuffleTable(ids)
+
+      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh " .. table.concat(shuffledids, " "))
+      print("-gh " .. table.concat(shuffledids, " "))
+    end
+  end,
+  ["asterazuke glitcher"] = function()
+    sendNotification("Moon Convert", "Ran!", 7)
+    if game.Players.LocalPlayer.Character:FindFirstChild("MyWorldDetection") then
+      loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/blob/main/Scripts/Converts/asterazuke%20glitcher.lua", true))()
+    else
+      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
+    end
+  end,
 }
