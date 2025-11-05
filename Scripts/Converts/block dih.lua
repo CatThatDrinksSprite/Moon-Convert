@@ -1,15 +1,15 @@
 loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
 loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/AlignCharacter.lua", true))()
 if game.Players.LocalPlayer.Character:FindFirstChild("MeshPartAccessory") then
-game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "game.Players.LocalPlayer.Character"
-game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "game.Players.LocalPlayer.Character.e2"
-game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "game.Players.LocalPlayer.Character.e3"
-game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "game.Players.LocalPlayer.Character.e4"
-game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "game.Players.LocalPlayer.Character.e5"
-game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "game.Players.LocalPlayer.Character.e6"
-game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "game.Players.LocalPlayer.Character.e7"
-game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "game.Players.LocalPlayer.Character.e8"
-game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "game.Players.LocalPlayer.Character.e9"
+game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "e1"
+game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "e2"
+game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "e3"
+game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "e4"
+game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "e5"
+game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "e6"
+game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "e7"
+game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "e8"
+game.Players.LocalPlayer.Character:WaitForChild("MeshPartAccessory").Name = "e9"
 game.Players.LocalPlayer.Character.e1.Handle.AccessoryWeld:Destroy()
 game.Players.LocalPlayer.Character.e2.Handle.AccessoryWeld:Destroy()
 game.Players.LocalPlayer.Character.e3.Handle.AccessoryWeld:Destroy()
