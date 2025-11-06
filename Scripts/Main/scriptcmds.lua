@@ -359,25 +359,5 @@ end
     else
       sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
     end
-  end,
-  ["get hats;block dih"] = function()
-    sendNotification("Moon Convert", "Getting Hats!", 7)
-    if game.Players.LocalPlayer.Character:FindFirstChild("MyWorldDetection") then
-      sendNotification("Moon Convert", "Please get hats before reanimating", 7)
-    else
-      local function shuffleTable(t)
-    local n = #t
-    for i = n, 2, -1 do
-        local j = math.random(1, i)
-        t[i], t[j] = t[j], t[i]
-    end
-    return t
-end
-      local ids = {"4602533885", "4602533885", "4602533885", "4602533885", "4602533885", "4602533885", "4602533885", "4602533885", "4602533885"}
-      local shuffledids = shuffleTable(ids)
-
-      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh " .. table.concat(shuffledids, " "))
-      print("-gh " .. table.concat(shuffledids, " "))
-    end
   end
 }
