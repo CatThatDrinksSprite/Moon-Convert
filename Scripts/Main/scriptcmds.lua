@@ -351,13 +351,5 @@ end
     else
       sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
     end
-  end,
-  ["block dih"] = function()
-    sendNotification("Moon Convert", "Ran!", 7)
-    if game.Players.LocalPlayer.Character:FindFirstChild("MyWorldDetection") then
-      loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Converts/block%20dih.lua", true))()
-    else
-      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
-    end
   end
 }
