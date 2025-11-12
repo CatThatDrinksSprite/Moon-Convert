@@ -7,6 +7,16 @@ else
 	sendNotification("Moon Convert", "This script only works in Just a baseplate, Spooky Fencing or Green baseplate.", 7)
 	error("bad")
 end
+
+if not isfolder("ScriptBase") then
+	sendNotification("Moon Convert", "Creating \"ScriptBase\"", 7)
+	makefolder("ScriptBase")
+end
+
+if not isfile("ScriptBase/thisisrequiredtorunmoonconvert.jpg") then
+	sendNotification("Moon Convert", "Downloading \"ScriptBase/thisisrequiredtorunmoonconvert.jpg\"", 7)
+	writefile("ScriptBase/thisisrequiredtorunmoonconvert.jpg", game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/ScriptBase/thisisrequiredtorunmoonconvert.jpg", true))
+end
 local userinputService = game:GetService("UserInputService")
 local textchatService = game:GetService("TextChatService")
 
