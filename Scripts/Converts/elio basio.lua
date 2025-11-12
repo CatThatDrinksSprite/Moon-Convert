@@ -896,7 +896,7 @@ if game.Players.LocalPlayer.Character:FindFirstChild("Accessory (modelAccessory)
 	AlignCharacter(game.Players.LocalPlayer.Character["Accessory (modelAccessory)"].Handle, game.Players.LocalPlayer.Character.Part, Vector3.new(0, -0.5, 0.5), Vector3.new(0, 0, 0))
 	for index, asset in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
 		if asset:IsA("BasePart") then
-			asset.Transparency = 0
+			asset.Transparency = 1
 		end
 	end
 else
