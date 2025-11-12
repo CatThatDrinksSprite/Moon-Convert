@@ -164,17 +164,17 @@ local SWIPES = {28144268,28144277,28144291,28144295}
 --|| SAZERENOS' ARTIFICIAL HEARTBEAT
 --\\=================================//
 
-ArtificialHB = Instance.new("BindableEvent", Player)
+ArtificialHB = Instance.new("BindableEvent", script)
 ArtificialHB.Name = "ArtificialHB"
 
-Player:WaitForChild("ArtificialHB")
+script:WaitForChild("ArtificialHB")
 
 frame = Frame_Speed
 tf = 0
 allowframeloss = false
 tossremainder = false
 lastframe = tick()
-Player.ArtificialHB:Fire()
+script.ArtificialHB:Fire()
 
 game:GetService("RunService").Heartbeat:connect(function(s, p)
 	tf = tf + s
