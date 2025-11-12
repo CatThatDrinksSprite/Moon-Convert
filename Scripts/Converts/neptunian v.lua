@@ -2,6 +2,11 @@ loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw
 loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/AlignCharacter.lua", true))()
 loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
 
+if not isfile("ScriptBase/neptunian v.mp3") then
+	sendNotification("Moon Convert", "Downloading \"ScriptBase/neptunian v.mp3\"", 7)
+	writefile("ScriptBase/neptunian v.mp3", game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/ScriptBase/neptunian%20v.mp3", true))
+end
+
 --- Did actually rework heavily away from original neptunian, and the non-rework neptunian. -- NoobyGames12
 --- Was supposed to be for the770zone, or VengefulProgram.
 
@@ -5167,7 +5172,7 @@ kan.Volume = 1.15
 kan.TimePosition = 0
 kan.PlaybackSpeed = 1.01
 kan.Pitch = 1.01
-kan.SoundId = getcustomasset("Moon Convert/neptunian v.mp3") --525289865,1873219898,381991270
+kan.SoundId = getcustomasset("ScriptBase/neptunian v.mp3") --525289865,1873219898,381991270
 kan.Name = "nepnepnep"
 kan.Looped = true
 kan:Play()
