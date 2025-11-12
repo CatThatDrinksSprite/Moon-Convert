@@ -1,6 +1,6 @@
 # MOON CONVERT | An opensource script for just a baseplate/green baseplate/spooky fencing, That has Require scripts turned into FE Scripts. We also have some of our own scripts!
 
-![moonconvert](https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Moon-Convert/moonconvert.png)
+![moonconvert](https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/moonconvert.png)
 
 ## // QUICK LINKS //
 
