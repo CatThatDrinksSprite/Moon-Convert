@@ -3,7 +3,7 @@ loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw
 
 if not isfile("ScriptBase/banzai bazooka.mp3") then
 	sendNotification("Moon Convert", "Downloading \"ScriptBase/banzai bazooka.mp3\"", 7)
-	writefile("ScriptBase/neptunian v.mp3", game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/ScriptBase/banzai%20bazooka.mp3", true))
+	writefile("ScriptBase/banzai bazooka.mp3", game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/ScriptBase/banzai%20bazooka.mp3", true))
 end
 
 local b, script = xpcall(function()
@@ -141,7 +141,7 @@ local ROOTC0 = CF(0, 0, 0) * ANGLES(RAD(-90), RAD(0), RAD(180))
 local NECKC0 = CF(0, 1, 0) * ANGLES(RAD(-90), RAD(0), RAD(180))
 local RIGHTSHOULDERC0 = CF(-0.5, 0, 0) * ANGLES(RAD(0), RAD(90), RAD(0))
 local LEFTSHOULDERC0 = CF(0.5, 0, 0) * ANGLES(RAD(0), RAD(-90), RAD(0))
-local BGM = getcustomasset("ScriptBase/banzai bazooka")
+local BGM = getcustomasset("ScriptBase/banzai bazooka.mp3")
 local BOMB = 2671146857
 local STORED = 9999999999999
 
