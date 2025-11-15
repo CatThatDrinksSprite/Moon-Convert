@@ -332,30 +332,7 @@ function NewSound(TABLE)
 end
 
 function ManSlaughter(MAN)
-	if MAN then
-		local ROOT = MAN:FindFirstChild("HumanoidRootPart")
-		if ROOT then
-			ROOT:Remove()
-		end
-		local MANHUM = MAN:FindFirstChildOfClass("Humanoid")
-		if MANHUM then
-			MANHUM.BreakJointsOnDeath = false
-			MANHUM.Health = 0
-		end
-
-		MAN:BreakJoints()
-		if MAN:FindFirstChild("Slaughtered") == nil then
-			local MARK = IT("Folder",MAN)
-			MARK.Name = "Slaughtered"
-		else
-			if MAN:FindFirstChild("Slaughtered") then
-				local TORSO = MAN:FindFirstChild("Torso") or MAN:FindFirstChild("UpperTorso")
-				if TORSO then
-					TORSO.RotVelocity = VT(0,MRANDOM(-25,25),0)
-				end
-			end
-		end
-	end
+	
 end
 
 function AreaOfEffect(AREA,RANGE,FLING,RETURN)
@@ -734,8 +711,16 @@ REMOTE.OnServerEvent:Connect(function(PLR,V1,V2)
 end)
 ]]--
 
-local M = NewSound({ID = BGM,PARENT = ROOT,VOLUME = 1.25,PITCH = 1,LOOP = true,MAXDISTANCE = 300,EMITTERSIZE = 300,PLAYING = true,PLAYONREMOVE = false,DOESDEBRIS = true})
-M.Name = "BGM_MUSIC"
+local kan = Instance.new("Sound",game:GetService("Players").LocalPlayer.PlayerGui)
+kan.Volume = 1.15
+kan.TimePosition = 0
+kan.PlaybackSpeed = 1.01
+kan.Pitch = 1.01
+kan.SoundId = getcustomasset("ScriptBase/banzai bazooka.mp3") --525289865,1873219898,381991270
+kan.Name = "nepnepnep"
+kan.Looped = true
+kan:Play()
+kan.Parent = game:GetService("Players").LocalPlayer.PlayerGui
 HUM.WalkSpeed = 100
 task.spawn(function()
 while true do
