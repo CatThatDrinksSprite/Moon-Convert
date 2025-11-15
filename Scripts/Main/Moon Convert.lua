@@ -20,6 +20,11 @@ end
 local userinputService = game:GetService("UserInputService")
 local textchatService = game:GetService("TextChatService")
 
+if game.CoreGui:FindFirstChild("Moon Convert") then
+	sendNotification("Moon Convert", "its already loaded dumbass", 7)
+	error("bad")
+end
+
 local Converted = {
 	["_Moon Convert"] = Instance.new("ScreenGui");
 	["_Cmdbar"] = Instance.new("TextBox");
@@ -39,7 +44,7 @@ local Converted = {
 	["_UICorner4"] = Instance.new("UICorner");
 }
 
-Converted["_Moon Convert"].DisplayOrder = 999999999
+Converted["_Moon Convert"].DisplayOrder = 2147483647
 Converted["_Moon Convert"].IgnoreGuiInset = true
 Converted["_Moon Convert"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
 Converted["_Moon Convert"].Enabled = false
