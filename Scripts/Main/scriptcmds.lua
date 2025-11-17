@@ -194,8 +194,7 @@ end
     if game.Players.LocalPlayer.Character:FindFirstChild("MyWorldDetection") then
       sendNotification("Moon Convert", "Please get hats before reanimating", 7)
     else
-      -- // hello just a baseplate owner, i stole this from ai lmao too lazy
-      -- // atp dm sharkywhiskers_meow on discord if u want me to stop fixing ts
+      -- // wow just a baseplate owner you ACTUALLY patched it... good job man
       --[[ local function shuffleTable(t)
     local n = #t
     for i = n, 2, -1 do
@@ -269,7 +268,7 @@ end
     end
   end,
   ["discord"] = function()
-    setclipboard([[discordapp.com/invite/DPBtncwaEm]])
+    setclipboard([[gg/DPBtncwaEm]])
     sendNotification("Moon Convert", "Set clipboard to discord link", 7)
   end,
   ["caducus"] = function()
