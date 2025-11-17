@@ -435,7 +435,7 @@ end
     else
       sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
     end
-  end
+  end,
   ["get hats;soul reaper"] = function()
     sendNotification("Moon Convert", "Getting Hats!", 7)
     if game.Players.LocalPlayer.Character:FindFirstChild("MyWorldDetection") then
