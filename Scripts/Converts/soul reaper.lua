@@ -1,49 +1,5 @@
--- loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/AlignCharacter.lua", true))()
-local Count = 1
-function AlignCharacter(Part0,Part1,Position,Angle)
-	local AlignPos = Instance.new('AlignPosition', Part1); AlignPos.Name = "AliP_"..Count
-	AlignPos.ApplyAtCenterOfMass = true;
-	AlignPos.MaxForce = 5772000--67752;
-	AlignPos.MaxVelocity = math.huge/9e110;
-	AlignPos.ReactionForceEnabled = false;
-	AlignPos.Responsiveness = 200;
-	AlignPos.RigidityEnabled = false;
-	local AlignOri = Instance.new('AlignOrientation', Part1); AlignOri.Name = "AliO_"..Count
-	AlignOri.MaxAngularVelocity = math.huge/9e110;
-	AlignOri.MaxTorque = 5772000
-	AlignOri.PrimaryAxisOnly = false;
-	AlignOri.ReactionTorqueEnabled = false;
-	AlignOri.Responsiveness = 200;
-	AlignOri.RigidityEnabled = false;
-	local AttachmentA=Instance.new('Attachment',Part1); AttachmentA.Name = "AthP_"..Count
-	local AttachmentB=Instance.new('Attachment',Part0); AttachmentB.Name = "AthP_"..Count
-	local AttachmentC=Instance.new('Attachment',Part1); AttachmentC.Name = "AthO_"..Count
-	local AttachmentD=Instance.new('Attachment',Part0); AttachmentD.Name = "AthO_"..Count
-	AttachmentC.Orientation = Angle
-	AttachmentA.Position = Position
-	AlignPos.Attachment1 = AttachmentA;
-	AlignPos.Attachment0 = AttachmentB;
-	AlignOri.Attachment1 = AttachmentC;
-	AlignOri.Attachment0 = AttachmentD;
-	Count = Count + 1
-end
--- loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
-function sendNotification(Title: string, Text: string, Duration: number)
-	game:GetService("StarterGui"):SetCore("SendNotification", {
-		Title = Title;
-		Text = Text;
-		Duration = Duration
-	})
-	task.delay(0,function()
-		local notif = Instance.new("Sound")
-		notif.SoundId = "rbxassetid://7518627362"
-		notif.Volume = 0.7
-		game:GetService("SoundService"):PlayLocalSound(notif)
-		task.delay(5, function()
-			notif:Destroy()
-		end)
-	end)
-end
+loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/AlignCharacter.lua", true))()
+loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
 
 local b, script = xpcall(function()
 	return game:GetObjects("rbxassetid://80518816046188")[1]
