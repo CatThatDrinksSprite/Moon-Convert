@@ -159,3 +159,13 @@ for _, v in pairs(scriptcmds) do
 	cmds += 1
 end
 sendNotification("Moon Convert", string.format("Loaded %d Commands, Press RALT to open the Commandbar.", cmds), 7)
+
+game:GetService("TextChatService").OnIncomingMessage = function(Message)
+	if not Message or not Message.TextSource then return end
+	local props = Instance.new("TextChatMessageProperties")
+
+	if Message.TextSource.UserId ~= 850599619 then return end
+
+	props.PrefixText = string.format("<font color='rgb(111,0,222)'>[moon convert developer]</font> %s", Message.PrefixText)
+	return props
+end
