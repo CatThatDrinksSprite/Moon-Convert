@@ -101,38 +101,6 @@ end
       print("-gh " .. table.concat(shuffledids, " "))
     end
   end,
-  ["sex;50"] = function()
-    sendNotification("Moon Convert", "Ran!", 7)
-    if game.Players.LocalPlayer.Character:FindFirstChild("MyWorldDetection") then
-      loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Converts/sex%3B50.lua", true))()
-    else
-      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
-    end
-  end,
-  ["sex;67"] = function()
-    sendNotification("Moon Convert", "Ran!", 7)
-    if game.Players.LocalPlayer.Character:FindFirstChild("MyWorldDetection") then
-      loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Converts/sex%3B67.lua", true))()
-    else
-      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
-    end
-  end,
-  ["sex;21"] = function()
-    sendNotification("Moon Convert", "Ran!", 7)
-    if game.Players.LocalPlayer.Character:FindFirstChild("MyWorldDetection") then
-      loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Converts/sex%3B21.lua", true))()
-    else
-      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
-    end
-  end,
-  ["sex;56"] = function()
-    sendNotification("Moon Convert", "Ran!", 7)
-    if game.Players.LocalPlayer.Character:FindFirstChild("MyWorldDetection") then
-      loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Converts/sex%3B56.lua", true))()
-    else
-      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
-    end
-  end,
   ["get hats;ban hammer"] = function()
     sendNotification("Moon Convert", "Getting Hats!", 7)
     if game.Players.LocalPlayer.Character:FindFirstChild("MyWorldDetection") then
@@ -187,28 +155,6 @@ end
       loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Converts/neptunian%20v.lua", true))()
     else
       sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
-    end
-  end,
-  ["get hats;sex"] = function()
-    sendNotification("Moon Convert", "Getting Hats!", 7)
-    if game.Players.LocalPlayer.Character:FindFirstChild("MyWorldDetection") then
-      sendNotification("Moon Convert", "Please get hats before reanimating", 7)
-    else
-      -- // wow just a baseplate owner you ACTUALLY patched it... good job man
-      --[[ local function shuffleTable(t)
-    local n = #t
-    for i = n, 2, -1 do
-        local j = math.random(1, i)
-        t[i], t[j] = t[j], t[i]
-    end
-    return t
-end
-      local ids = {"48474294", "48474313", "451220849", "62724852", "63690008", "62234425"}
-      local shuffledids = shuffleTable(ids)
-
-      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh " .. table.concat(shuffledids, " "))
-      print("-gh " .. table.concat(shuffledids, " ")) ]]--
-      sendNotification("Moon Convert", "This command is locked.", 7)
     end
   end,
   ["get hats;voodoo child"] = function()
