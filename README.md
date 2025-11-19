@@ -4,7 +4,7 @@
 
 ## // QUICK LINKS //
 
-> Discord https://discordapp.com/invite/DPBtncwaEm
+> Discord https://discord.gg/DPBtncwaEm
 
 # What are you waiting for? Use it now!
 
