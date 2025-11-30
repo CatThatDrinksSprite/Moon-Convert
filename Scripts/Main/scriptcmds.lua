@@ -9,6 +9,7 @@ scriptcmds = {
     sendNotification("Moon Convert", "Showing HumanoidRootPart!", 7)
     if game.Players.LocalPlayer.Character:FindFirstChild("MoonConvertRealChar") then
       if not game.Players.LocalPlayer.Character.MoonConvertRealChar.HumanoidRootPart:FindFirstChild("Highlight") then
+        game.Players.LocalPlayer.Character.MoonConvertRealChar.HumanoidRootPart.Transparency = 0.99
         local Highlight = Instance.new("Highlight", game.Players.LocalPlayer.Character.MoonConvertRealChar.HumanoidRootPart)
         local i = 0
         game:GetService'RunService'.RenderStepped:Connect(function(delta)
