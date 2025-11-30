@@ -2,7 +2,7 @@ loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw
 loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
 sendNotification("Moon Convert", "gg/DPBtncwaEm", 7)
 print(game.PlaceId)
-if game.PlaceId == 88308889239232 or game.PlaceId == 17574618959 then
+if game.PlaceId == 88308889239232 or game.PlaceId == 17574618959 or game.PlaceId == 123974602339071 then
 	print("good")
 else
 	sendNotification("Moon Convert", "This script only works in Just a baseplate, or Green baseplate.", 7)
