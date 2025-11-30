@@ -13,7 +13,7 @@ scriptcmds = {
         local i = 0
         game:GetService'RunService'.RenderStepped:Connect(function(delta)
             Highlight.FillColor = Color3.fromHSV(i, 1, 1)
-            i = (i = delta+0.1) % 1
+            i = (i + delta+0.1) % 1
         end)
       else
         sendNotification("Moon Convert", "HumanoidRootPart Already Showing.", 7)
