@@ -1,6 +1,11 @@
 loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/AlignCharacter.lua", true))()
 loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
 
+if not isfile("ScriptBase/sin dragon.mp3") then
+	sendNotification("Moon Convert", "Downloading \"ScriptBase/sin dragon.mp3\"", 7)
+	writefile("ScriptBase/sin dragon.mp3", game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/ScriptBase/sin%20dragon.mp3", true))
+end
+
 -----------------
 --some sin thing--
 --------------------------------------------------------------
@@ -793,7 +798,7 @@ Weld = New("ManualWeld",EyePart,"Weld",{Part0 = EyePart,Part1 = handle,C1 = CFra
 
 
 local moosick = it("Sound",Character)
-moosick.SoundId = "rbxassetid://1268378545"
+moosick.SoundId = getcustomasset("ScriptBase/sin dragon.mp3")
 --142653441, 175067863
 moosick.Name = "moosick"
 moosick.Looped = true
@@ -2182,7 +2187,7 @@ mouse.KeyDown:connect(function(k)
 		elseif Character:FindFirstChild("moosick")==nil then
 			local moosick = Instance.new("Sound",Character)
 			moosick.Name = "moosick"
-			moosick.SoundId = "rbxassetid://608726256"
+			moosick.SoundId = getcustomasset("ScriptBase/sin dragon.mp3")
 			moosick.Looped = true
 			moosick.Volume = 1
 			moosick:Play()
