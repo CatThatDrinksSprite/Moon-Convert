@@ -164,8 +164,21 @@ game:GetService("TextChatService").OnIncomingMessage = function(Message)
 	if not Message or not Message.TextSource then return end
 	local props = Instance.new("TextChatMessageProperties")
 
-	if Message.TextSource.UserId ~= 850599619 then return end
-
-	props.PrefixText = string.format("<font color='rgb(111,0,222)'>[moon convert developer]</font> %s", Message.PrefixText)
+	if Message.TextSource.UserId == 850599619 then
+		props.PrefixText = string.format("<font color='rgb(111,0,222)'>[moon convert developer]</font> %s", Message.PrefixText)
+	elseif Message.TextSource.UserId == 2553443 then
+		props.PrefixText = string.format("<font color='rgb(52,152,219)'>[moon convert moderator]</font> %s", Message.PrefixText)
+	elseif Message.TextSource.UserId == 198956283 then
+		props.PrefixText = string.format("<font color='rgb(52,152,219)'>[moon convert moderator]</font> %s", Message.PrefixText)
+	elseif Message.TextSource.UserId == 7836198961 then
+		props.PrefixText = string.format("<font color='rgb(52,152,219)'>[moon convert moderator]</font> %s", Message.PrefixText)
+	elseif Message.TextSource.UserId == 3627135951 then
+		props.PrefixText = string.format("<font color='rgb(52,152,219)'>[moon convert moderator]</font> %s", Message.PrefixText)
+	elseif Message.TextSource.UserId == 4467590431 then
+		props.PrefixText = string.format("<font color='rgb(52,152,219)'>[moon convert moderator]</font> %s", Message.PrefixText)
+	else
+		return
+	end
+	
 	return props
 end
