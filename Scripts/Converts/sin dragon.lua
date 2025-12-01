@@ -2344,13 +2344,13 @@ Handle2weld.C0=clerp(Handle2weld.C0,cf(0,0,0)*angles(math.rad(0),math.rad(0),mat
 	end
 end)
 
-if game.Players.LocalPlayer.Character:FindFirstChild("Accessory (EvilVoidHeadBackpack)") then
-	game.Players.LocalPlayer.Character["Accessory (EvilVoidHeadBackpack)"].Handle.AccessoryWeld:Destroy()
-	game.Players.LocalPlayer.Character["Accessory (Right Void Wall)"].Handle.AccessoryWeld:Destroy()
-	game.Players.LocalPlayer.Character["Accessory (Left Void Wall)"].Handle.AccessoryWeld:Destroy()
-	AlignCharacter(game.Players.LocalPlayer.Character["Accessory (EvilVoidHeadBackpack)"].Handle, game.Players.LocalPlayer.Character.Eye.DragonHead, Vector3.new(0, 0, 0), Vector3.new(0, 180, 0))
-	AlignCharacter(game.Players.LocalPlayer.Character["Accessory (Right Void Wall)"].Handle, game.Players.LocalPlayer.Character.Claw1.Gear, Vector3.new(0, 0, 0), Vector3.new(0, 0, -90))
-	AlignCharacter(game.Players.LocalPlayer.Character["Accessory (Left Void Wall)"].Handle, game.Players.LocalPlayer.Character.Claw2.Gear2, Vector3.new(0, 0, 0), Vector3.new(0, 0, -90))
+if game.Players.LocalPlayer.Character:FindFirstChild("Accessory (head)") then
+	game.Players.LocalPlayer.Character["Accessory (head)"].Handle.AccessoryWeld:Destroy()
+	game.Players.LocalPlayer.Character["Accessory (bigrarm)"].Handle.AccessoryWeld:Destroy()
+	game.Players.LocalPlayer.Character["Accessory (biglarm)"].Handle.AccessoryWeld:Destroy()
+	AlignCharacter(game.Players.LocalPlayer.Character["Accessory (head)"].Handle, game.Players.LocalPlayer.Character.Eye.DragonHead, Vector3.new(0, 0, 0), Vector3.new(0, 0, 0))
+	AlignCharacter(game.Players.LocalPlayer.Character["Accessory (bigrarm)"].Handle, game.Players.LocalPlayer.Character.Claw1.Gear, Vector3.new(0, 0, 0), Vector3.new(0, 0, 0))
+	AlignCharacter(game.Players.LocalPlayer.Character["Accessory (biglarm)"].Handle, game.Players.LocalPlayer.Character.Claw2.Gear2, Vector3.new(0, 0, 0), Vector3.new(0, 0, 0))
 	for _, v in ipairs(game.Players.LocalPlayer.Character.Eye:GetChildren()) do
 		if v:IsA("BasePart") then
 			v.Transparency = 1
