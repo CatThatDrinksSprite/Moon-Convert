@@ -5,24 +5,6 @@ scriptcmds = {
     sendNotification("Moon Convert", "Reanimating!", 7)
     loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Reanimation/MyWorld.lua", true))()
   end,
-  ["showhrp"] = function()
-    sendNotification("Moon Convert", "Showing HumanoidRootPart!", 7)
-    if game.Players.LocalPlayer.Character:FindFirstChild("MoonConvertRealChar") then
-      if not game.Players.LocalPlayer.Character.MoonConvertRealChar.HumanoidRootPart:FindFirstChild("Highlight") then
-        game.Players.LocalPlayer.Character.MoonConvertRealChar.HumanoidRootPart.Transparency = 0.99
-        local Highlight = Instance.new("Highlight", game.Players.LocalPlayer.Character.MoonConvertRealChar.HumanoidRootPart)
-        local i = 0
-        game:GetService'RunService'.RenderStepped:Connect(function(delta)
-            Highlight.FillColor = Color3.fromHSV(i, 1, 1)
-            i = (i + delta+0.001) % 1
-        end)
-      else
-        sendNotification("Moon Convert", "HumanoidRootPart Already Showing.", 7)
-      end
-    else
-      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
-    end
-  end,
   ["discord"] = function()
     setclipboard([[gg/DPBtncwaEm]])
     sendNotification("Moon Convert", "Set clipboard to discord link", 7)
