@@ -22,7 +22,7 @@ local userinputService = game:GetService("UserInputService")
 local textchatService = game:GetService("TextChatService")
 
 if game.CoreGui:FindFirstChild("Moon Convert") then
-	sendNotification("Moon Convert", "its already loaded dumbass", 7)
+	sendNotification("Moon Convert", "Script is already loaded! Press RALT to open the Commandbar.", 7)
 	error("bad")
 end
 
