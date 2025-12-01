@@ -166,7 +166,7 @@ game:GetService("TextChatService").OnIncomingMessage = function(Message)
 
 	if Message.TextSource.UserId == 850599619 or Message.TextSource.UserId == 9920694367 then
 		props.PrefixText = string.format("<font color='rgb(111,0,222)'>[moon convert developer]</font> %s", Message.PrefixText)
-	elseif Message.TextSource.UserId == 2553443 or Message.TextSource.UserId == 198956283 or Message.TextSource.UserId == 7836198961 or Message.TextSource.UserId == 3627135951 or Message.TextSource.UserId == 4467590431 then
+	elseif Message.TextSource.UserId == 2553443 or Message.TextSource.UserId == 198956283 or Message.TextSource.UserId == 7836198961 then
 		props.PrefixText = string.format("<font color='rgb(52,152,219)'>[moon convert moderator]</font> %s", Message.PrefixText)
 	else
 		return
