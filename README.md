@@ -1,4 +1,4 @@
-# Moon Convert - #1 Just a baseplate/Green baseplate Script.
+# Moon Convert - An opensource Reanimate hub for Just a baseplate/Green baseplate.
 
 ![moonconvert](https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/moonconvert.png)
 
