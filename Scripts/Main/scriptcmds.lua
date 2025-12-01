@@ -422,7 +422,7 @@ end
     end
     return t
 end
-      local ids = {"17269952801", "17269983359", "17375337078"}
+      local ids = {"103553910759670", "80946588383348", "91231828844169"}
       local shuffledids = shuffleTable(ids)
 
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh " .. table.concat(shuffledids, " "))
