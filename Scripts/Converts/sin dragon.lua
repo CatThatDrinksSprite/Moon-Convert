@@ -2,7 +2,6 @@ loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw
 loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
 
 if not isfile("ScriptBase/sin dragon.mp3") then
-	sendNotification("Moon Convert", "Downloading \"ScriptBase/sin dragon.mp3\"", 7)
 	writefile("ScriptBase/sin dragon.mp3", game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/ScriptBase/sin%20dragon.mp3", true))
 end
 
