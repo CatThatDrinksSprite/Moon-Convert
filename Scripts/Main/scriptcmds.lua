@@ -25,14 +25,6 @@ scriptcmds = {
       sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
     end
   end,
-  ["shopping cart"] = function()
-    sendNotification("Moon Convert", "Ran!", 7)
-    if game.Players.LocalPlayer.Character:FindFirstChild("MoonConvertRealChar") then
-      loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Converts/shopping%20cart.lua", true))()
-    else
-      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
-    end
-  end,
   ["memeus"] = function()
     sendNotification("Moon Convert", "Ran!", 7)
     if game.Players.LocalPlayer.Character:FindFirstChild("MoonConvertRealChar") then
@@ -57,14 +49,6 @@ scriptcmds = {
       sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
     end
   end,
-  ["nebula star glitcher"] = function()
-    sendNotification("Moon Convert", "Ran!", 7)
-    if game.Players.LocalPlayer.Character:FindFirstChild("MoonConvertRealChar") then
-      loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Converts/nebula%20star%20glitcher.lua", true))()
-    else
-      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
-    end
-  end,
   ["get hats;chips"] = function()
     sendNotification("Moon Convert", "Getting Hats!", 7)
     if game.Players.LocalPlayer.Character:FindFirstChild("MoonConvertRealChar") then
@@ -79,26 +63,6 @@ scriptcmds = {
     return t
 end
       local ids = {"4964938812"}
-      local shuffledids = shuffleTable(ids)
-
-      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh " .. table.concat(shuffledids, " "))
-      print("-gh " .. table.concat(shuffledids, " "))
-    end
-  end,
-  ["get hats;shopping cart"] = function()
-    sendNotification("Moon Convert", "Getting Hats!", 7)
-    if game.Players.LocalPlayer.Character:FindFirstChild("MoonConvertRealChar") then
-      sendNotification("Moon Convert", "Please get hats before reanimating", 7)
-    else
-      local function shuffleTable(t)
-    local n = #t
-    for i = n, 2, -1 do
-        local j = math.random(1, i)
-        t[i], t[j] = t[j], t[i]
-    end
-    return t
-end
-      local ids = {"4794163533"}
       local shuffledids = shuffleTable(ids)
 
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh " .. table.concat(shuffledids, " "))
@@ -233,34 +197,6 @@ end
       sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
     end
   end,
-  ["dual ultima"] = function()
-    sendNotification("Moon Convert", "Ran!", 7)
-    if game.Players.LocalPlayer.Character:FindFirstChild("MoonConvertRealChar") then
-      loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Converts/dual%20ultima.lua", true))()
-    else
-      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
-    end
-  end,
-  ["get hats;dual ultima"] = function()
-    sendNotification("Moon Convert", "Getting Hats!", 7)
-    if game.Players.LocalPlayer.Character:FindFirstChild("MoonConvertRealChar") then
-      sendNotification("Moon Convert", "Please get hats before reanimating", 7)
-    else
-      local function shuffleTable(t)
-    local n = #t
-    for i = n, 2, -1 do
-        local j = math.random(1, i)
-        t[i], t[j] = t[j], t[i]
-    end
-    return t
-end
-      local ids = {"5316549755", "5316539421"}
-      local shuffledids = shuffleTable(ids)
-
-      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh " .. table.concat(shuffledids, " "))
-      print("-gh " .. table.concat(shuffledids, " "))
-    end
-  end,
   ["get hats;asterazuke glitcher"] = function()
     sendNotification("Moon Convert", "Getting Hats!", 7)
     if game.Players.LocalPlayer.Character:FindFirstChild("MoonConvertRealChar") then
@@ -315,62 +251,6 @@ end
 
       game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh " .. table.concat(shuffledids, " "))
       print("-gh " .. table.concat(shuffledids, " "))
-    end
-  end,
-  ["get hats;blind reaper"] = function()
-    sendNotification("Moon Convert", "Getting Hats!", 7)
-    if game.Players.LocalPlayer.Character:FindFirstChild("MoonConvertRealChar") then
-      sendNotification("Moon Convert", "Please get hats before reanimating", 7)
-    else
-      local function shuffleTable(t)
-    local n = #t
-    for i = n, 2, -1 do
-        local j = math.random(1, i)
-        t[i], t[j] = t[j], t[i]
-    end
-    return t
-end
-      local ids = {"18275328462", "15008443536"}
-      local shuffledids = shuffleTable(ids)
-
-      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh " .. table.concat(shuffledids, " "))
-      print("-gh " .. table.concat(shuffledids, " "))
-    end
-  end,
-  ["blind reaper"] = function()
-    sendNotification("Moon Convert", "Ran!", 7)
-    if game.Players.LocalPlayer.Character:FindFirstChild("MoonConvertRealChar") then
-      loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Converts/blind%20reaper.lua", true))()
-    else
-      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
-    end
-  end,
-  ["get hats;banzai bazooka"] = function()
-    sendNotification("Moon Convert", "Getting Hats!", 7)
-    if game.Players.LocalPlayer.Character:FindFirstChild("MoonConvertRealChar") then
-      sendNotification("Moon Convert", "Please get hats before reanimating", 7)
-    else
-      local function shuffleTable(t)
-    local n = #t
-    for i = n, 2, -1 do
-        local j = math.random(1, i)
-        t[i], t[j] = t[j], t[i]
-    end
-    return t
-end
-      local ids = {"79492025253331"}
-      local shuffledids = shuffleTable(ids)
-
-      game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh " .. table.concat(shuffledids, " "))
-      print("-gh " .. table.concat(shuffledids, " "))
-    end
-  end,
-  ["banzai bazooka"] = function()
-    sendNotification("Moon Convert", "Ran!", 7)
-    if game.Players.LocalPlayer.Character:FindFirstChild("MoonConvertRealChar") then
-      loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Converts/banzai%20bazooka.lua", true))()
-    else
-      sendNotification("Moon Convert", "Please use command \"reanimate\" first.", 7)
     end
   end,
   ["soul reaper"] = function()
