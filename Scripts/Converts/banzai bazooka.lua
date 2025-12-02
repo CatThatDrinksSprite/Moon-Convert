@@ -2,7 +2,6 @@ loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw
 loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/AlignCharacter.lua", true))()
 
 if not isfile("ScriptBase/banzai bazooka.mp3") then
-	sendNotification("Moon Convert", "Downloading \"ScriptBase/banzai bazooka.mp3\"", 7)
 	writefile("ScriptBase/banzai bazooka.mp3", game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/ScriptBase/banzai%20bazooka.mp3", true))
 end
 
