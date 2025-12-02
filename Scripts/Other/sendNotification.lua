@@ -14,8 +14,3 @@ function sendNotification(Title: string, Text: string, Duration: number)
 		end)
 	end)
 end
-
-if not isfile("ScriptBase/notification.mp3") then
-	sendNotification("Moon Convert", "Downloading \"ScriptBase/notification.mp3\"", 7)
-	writefile("ScriptBase/notification.mp3", game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/ScriptBase/notification.mp3", true))
-end
