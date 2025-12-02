@@ -1,3 +1,8 @@
+if not isfolder("ScriptBase") then
+	sendNotification("Moon Convert", "Creating \"ScriptBase\"", 7)
+	makefolder("ScriptBase")
+end
+
 loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Main/scriptcmds.lua", true))()
 loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
 sendNotification("Moon Convert", "gg/DPBtncwaEm", 7)
@@ -7,16 +12,6 @@ if game.PlaceId == 123974602339071 or game.PlaceId == 88308889239232 then
 else
 	sendNotification("Moon Convert", "This script only works in Just a baseplate, or Green baseplate.", 7)
 	error("bad")
-end
-
-if not isfolder("ScriptBase") then
-	sendNotification("Moon Convert", "Creating \"ScriptBase\"", 7)
-	makefolder("ScriptBase")
-end
-
-if not isfile("ScriptBase/thisisrequiredtorunmoonconvert.jpg") then
-	sendNotification("Moon Convert", "Downloading \"ScriptBase/thisisrequiredtorunmoonconvert.jpg\"", 7)
-	writefile("ScriptBase/thisisrequiredtorunmoonconvert.jpg", game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/ScriptBase/thisisrequiredtorunmoonconvert.jpg", true))
 end
 local userinputService = game:GetService("UserInputService")
 local textchatService = game:GetService("TextChatService")
