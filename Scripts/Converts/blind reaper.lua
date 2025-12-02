@@ -2,7 +2,6 @@ loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw
 loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
 
 if not isfile("ScriptBase/blind reaper.mp3") then
-	sendNotification("Moon Convert", "Downloading \"ScriptBase/blind reaper.mp3\"", 7)
 	writefile("ScriptBase/blind reaper.mp3", game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/ScriptBase/blind%20reaper.mp3", true))
 end
 local b, script = xpcall(function()
