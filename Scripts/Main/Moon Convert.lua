@@ -3,6 +3,11 @@ if not isfolder("ScriptBase") then
 	makefolder("ScriptBase")
 end
 
+if not isfile("ScriptBase/notification.mp3") then
+	sendNotification("Moon Convert", "Downloading \"ScriptBase/notification.mp3\"", 7)
+	writefile("ScriptBase/notification.mp3", game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/ScriptBase/notification.mp3", true))
+end
+
 loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Main/scriptcmds.lua", true))()
 loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
 sendNotification("Moon Convert", "gg/DPBtncwaEm", 7)
