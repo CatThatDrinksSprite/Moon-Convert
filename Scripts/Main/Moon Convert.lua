@@ -136,9 +136,8 @@ end
 	end
 end)
 
-userinputService.InputBegan:Connect(function(input, gameprocessedEvent)
-	if gameprocessedEvent then return end
-	if input.KeyCode == Enum.KeyCode.RightAlt then
+local function OPEN(v, vv)
+	if v == "MoonConvert" and vv == Enum.UserInputState.Begin then
 		if Converted["_Moon Convert"].Enabled == false then
 			Converted["_Moon Convert"].Enabled = true
 			Converted["_Cmdbar"]:CaptureFocus()
@@ -151,7 +150,9 @@ userinputService.InputBegan:Connect(function(input, gameprocessedEvent)
 			Converted["_Moon Convert"].Enabled = false
 		end
 	end
-end)
+end
+game:GetService("ContextActionService"):BindAction("MoonConvert", OPEN, true, Enum.KeyCode.RightAlt)
+game:GetService("ContextActionService"):SetTitle("MoonConvert", "Moon Convert")
 local cmds = 0
 for _, v in pairs(scriptcmds) do
 	cmds += 1
