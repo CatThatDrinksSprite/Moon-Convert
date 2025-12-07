@@ -16,8 +16,6 @@ loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw
 
 CatThatDrinksSprite - made this script, krystal dance v4 command and sex command
 
-veser - made the animation to cframe plugin for krystal dance v4 command and sex command + awesome
-
 whoever made the original fd/require scripts
 
 myworld - made the reanimate
