@@ -14,7 +14,7 @@ loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw
 
 ## // CREDITS //
 
-CatThatDrinksSprite - made this script, krystal dance v4 command and sex command
+CatThatDrinksSprite - made this script
 
 whoever made the original fd/require scripts
 
