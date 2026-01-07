@@ -10,18 +10,16 @@ loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw
 loadstring(game:HttpGet("https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Scripts/Other/sendNotification.lua", true))()
 sendNotification("Moon Convert", "gg/DPBtncwaEm", 7)
 print(game.PlaceId)
-if game.PlaceId == 123974602339071 or game.PlaceId == 88308889239232 then
-	print("good")
-else
+if game.PlaceId ~= 123974602339071 and game.PlaceId ~= 88308889239232 then
 	sendNotification("Moon Convert", "This script only works in Just a baseplate, or Green baseplate.", 7)
-	error("bad")
+	return
 end
 local userinputService = game:GetService("UserInputService")
 local textchatService = game:GetService("TextChatService")
 
 if game.CoreGui:FindFirstChild("Moon Convert") then
 	sendNotification("Moon Convert", "Script is already loaded! Press RALT to open the Commandbar.", 7)
-	error("bad")
+	return
 end
 
 local Converted = {
@@ -174,4 +172,13 @@ game:GetService("TextChatService").OnIncomingMessage = function(Message)
 	end
 	
 	return props
+end
+
+--// i know this is opensource but who cares
+
+local response = game:HttpGet(string.format("https://api.azula.wtf/rotector/users/%s", game.Players.LocalPlayer.UserId))
+local decoded = game:GetService("HttpService"):JSONDecode(response)
+
+if decoded.data.flagType == 2 then
+	game.Players.LocalPlayer:Kick(string.format("You have been kicked by ZeroTolerance for: %s", next(decoded.data.reasons)))
 end
