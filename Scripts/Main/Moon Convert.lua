@@ -179,6 +179,6 @@ end
 local response = game:HttpGet(string.format("https://api.azula.wtf/rotector/users/%s", game.Players.LocalPlayer.UserId))
 local decoded = game:GetService("HttpService"):JSONDecode(response)
 
-if decoded.data.flagType == 2 then
+if decoded.data.flagType == 2 or decoded.data.flagType == 6 then
 	game.Players.LocalPlayer:Kick(string.format("You have been kicked by ZeroTolerance for: %s", next(decoded.data.reasons)))
 end
